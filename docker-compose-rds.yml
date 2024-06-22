@@ -1,0 +1,26 @@
+version: '3'
+networks:
+  harvest:
+services:
+  wordpress:
+    image: wordpress:${WP_VERSION:-latest}
+    restart: always
+    ports:
+      - ${WP_PORT:-8081}:80
+    volumes:
+      - ./php.ini:/usr/local/etc/php/php.ini
+      - ./public:/var/www/html
+    networks:
+      - harvest
+  nginx:
+    image: nginx:alpine
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
+      - ./nginx-proxy.conf:/etc/nginx/conf.d/default.conf:ro
+    links:
+      - wordpress
+    networks:
+      - harvest

@@ -1,0 +1,267 @@
+.post-type-send_to_sherpa  .modal-content{width:900px}
+
+.post-type-send_to_sherpa input#birthday {
+    margin: 0px 0px 0px -22px;
+}
+.post-type-send_to_sherpa select#del_win_changes {
+    margin: 0px 0px 0px -10px;
+	 width: 143px;
+}
+.post-type-send_to_sherpa select#packages {
+    margin: 0 0 0 21px;
+    width: 50px;
+}
+.post-type-send_to_sherpa select#del_options {
+    width: 101px;
+    margin-left: 20%;
+}
+.post-type-send_to_sherpa input#date_picker {
+    width: 93px;
+}
+.post-type-send_to_sherpa .ui-datepicker-title {
+    display: none;
+}
+.post-type-send_to_sherpa .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    display: none;
+}
+.post-type-send_to_sherpa table.ui-datepicker-calendar {
+    background: whitesmoke;
+}
+
+.post-type-send_to_sherpa th#del_date {
+  width: 200px; /* Adjust the desired width for the 'delivery date' column */
+}
+
+.post-type-send_to_sherpa th#del_option {
+  padding-left: 2%;
+  width: 200px;
+}
+
+.post-type-send_to_sherpa th#packages {
+  width: 150px;
+}
+
+.post-type-send_to_sherpa th label{
+  color: #919294;
+}
+
+.post-type-send_to_sherpa tr .row-actions {
+    display: none;
+}
+.post-type-send_to_sherpa .wp-list-table > tfoot {
+    display: none;
+}
+.post-type-send_to_sherpa .Zebra_DatePicker {
+    margin: 77px 0 0 0;
+}
+.post-type-send_to_sherpa input#del_date_view {
+   width: 182px;
+    font-size: 11px;
+}
+.post-type-send_to_sherpa p.search-box, span.displaying-num {
+    display: none;
+}
+.post-type-send_to_sherpa span.displaying-num {
+    display: none;
+}
+.post-type-send_to_sherpa .tablenav-pages.one-page {
+    display: none;
+    margin-bottom: 20px;
+}
+.post-type-send_to_sherpa .send-sherpa--btn {
+    float: right;
+    background-color: #007cba;
+    color: #fff;
+    padding: 0px 6px;
+    border-radius: 5px;
+    margin: 30px 21px 0px 0px;
+}
+.post-type-send_to_sherpa select#sherpa_method_option {
+    width: 160px;
+}
+.send-sherpa--btn :nth-child(2) {
+  display:none;
+}
+ .post-type-send_to_sherpa .subsubsub {
+    display: none;
+}
+ .post-type-send_to_sherpa .modal-header {
+        justify-content: end;
+}
+.post-type-send_to_sherpa .view-body table td {
+    display: inline-block;
+    padding: 14px 5px 6px 8px;
+} 
+.post-type-send_to_sherpa a.page-title-action {
+    display: none;
+}
+/* .post-type-send_to_sherpa .alignleft {
+    display: none;
+ */}  
+.post-type-send_to_sherpa select#filter-by-date {
+    display: none !important;
+}
+.post-type-send_to_sherpa input#post-query-submit {
+    display: none;
+}
+
+.post-type-send_to_sherpa button#show-settings-link {
+    display: none;
+}
+
+.post-type-send_to_sherpa .dropdown{
+            position: relative;
+            display: inline-block;
+}
+.extttfddd button.Zebra_DatePicker_Icon {
+    margin: 16px 0 0 0;
+}
+.post-type-send_to_sherpa .modal tr td label {line-height:16px;}
+.post-type-send_to_sherpa .modal-body {padding-top: 0px; padding-bottom: 0px;}
+.post-type-send_to_sherpa .modal-body tr.third--tr td { padding-top: 10px; font-size:14px;}
+.post-type-send_to_sherpa .modal-header button {margin-left: 10px;}
+.post-type-send_to_sherpa .modal-header button.btn.btn-secondary.testing {background: transparent;border: 0px; color: #1956c7;}
+.post-type-send_to_sherpa button.btn.btn-primary.sherpa_update { background: transparent; color: #0069d9;}
+.post-type-send_to_sherpa tbody tr td {padding-top: 10px!important; font-weight:400;}
+.post-type-send_to_sherpa .modal-dialog {top: 145px;}
+body.post-type-send_to_sherpa .modal-body{padding: 0rem;}
+body.post-type-send_to_sherpa .modal-body table.bulk_edit tr td {
+    width: 170px!important;
+    max-width: 170px!important;
+    overflow: hidden;
+}
+body.post-type-send_to_sherpa .modal-body table.bulk_edit tr td input#del_date {
+    width: 100%;
+}
+input#del_date {   width: 100%;}
+
+body.post-type-send_to_sherpa .modal-body table.bulk_edit tr td:first-child {
+    width: 130px!important;
+    padding-right: 0px;
+}
+body.post-type-send_to_sherpa .modal-body table.bulk_edit tr td:nth-child(2), 
+body.post-type-send_to_sherpa .modal-body table.bulk_edit tr td:nth-child(3){
+    width: 28%;
+    max-width: 28%;
+    padding-left: 5px;
+}
+body.post-type-send_to_sherpa .modal-body table.bulk_edit tr td:nth-child(4){
+    width: 30%;
+    max-width: 30%;
+    padding-left: 0px;
+}
+body.post-type-send_to_sherpa .modal-body table.bulk_edit tr th {
+    font-size: 14px;
+}
+body.post-type-send_to_sherpa .modal-body table.bulk_edit {
+    width: 100%;
+}
+body.post-type-send_to_sherpa .modal-body table.bulk_edit tr td:nth-child(5) {
+    width: 235px!important;
+    max-width: 235px!important;
+    padding-right: 2px;
+}
+.col-md-2.text_right button {
+    float: right;
+}
+
+.left_text h6 {
+    padding-top: 10px;
+}
+table.table.delivery_prefrences tr td:nth-child(1) {
+    width: 180px;
+    padding-left: 15px;
+}
+table.table.delivery_prefrences tr td:nth-child(2) {
+    width: 180px;
+}
+table.table.delivery_prefrences tr td:nth-child(3){
+    width: 200px;
+}
+.post-type-send_to_sherpa .view-body table td input {
+    float: left;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+.post-type-send_to_sherpa table.table.delivery_prefrences td {border:0px;}
+table.table.delivery_prefrences tr {
+    padding-left: 10px;
+}
+.modal-header button {
+    background: transparent;
+    color: #007bff;
+}
+table.modal-body.bulk_edit tr th {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+.modal-content.modal_edit_bulk table tr.second--tr {
+    background: #f9f9f9;
+}
+table.modal-body.bulk_edit button.btn.btn-secondary.testing {
+    background: transparent;
+    color: #5381b5;
+    border: 0px;
+}
+table.modal-body.bulk_edit tr th:nth-child(1), table.modal-body.bulk_edit tr td:nth-child(1) {
+   padding-left: 15px;}
+table.modal-body.bulk_edit tr th:last-child {
+    text-align: right;
+    padding-right: 17px;
+}
+table.modal-body.bulk_edit tr td .wrap--input label{padding-left:5px; margin-left:0px;}
+
+select.del_win_changes.disdelwin {
+    opacity: 0.6;
+    background-color: white;
+    outline: none;
+	pointer-events: none;
+}
+
+/* select box container */
+.select-container {
+  position: relative;
+}
+
+/* loader */
+
+.loaderdisdelwinsec {
+	border: 3px solid #f3f3f3; /* loader border color */
+	border-top: 3px solid #3498db; /* loader top border color */
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	animation: spin 1s linear infinite;
+	right: 10px; /* adjust right position as per your requirement */
+	transform: translateY(-50%); /* to vertically center loader */
+	position: absolute;
+    top: 18px;
+    left: 50px;
+}
+td.tdloaderdisdelwinsec {
+    position: relative;
+}
+.loaderdisdelwin {
+	border: 3px solid #f3f3f3; /* loader border color */
+	border-top: 3px solid #3498db; /* loader top border color */
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	animation: spin 1s linear infinite;
+	right: 10px; /* adjust right position as per your requirement */
+	transform: translateY(-50%); /* to vertically center loader */
+	position: absolute;
+	top: 8px;
+	left: 50px;
+}
+
+/* loader animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.uniquedel_options{
+	position: relative;
+}

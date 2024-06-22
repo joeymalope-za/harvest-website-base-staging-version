@@ -1,0 +1,7 @@
+ID_API_DOMAIN=http://id-api.local:3000/
+HARVEST_API_DOMAIN=http://harvest-api.local:3001/
+ID_WEB_DOMAIN=http://id-web.local:3002/
+QUEUE_WEB_DOMAIN=http://consult.local:3003/
+DOMAIN_URL=http://harvest.local
+HARVEST_QUEUE_DOMAIN=https://harvest-queue:3006/
+HARVEST_CONSENT_DOMAIN=http://localhost:3005/

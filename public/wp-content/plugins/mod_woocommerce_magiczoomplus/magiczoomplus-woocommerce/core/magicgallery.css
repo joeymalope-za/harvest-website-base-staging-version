@@ -1,0 +1,16 @@
+div[data-slide-id] { display: none; }
+.no-cssfilters-magic .mz-thumb {
+  background: none !important;
+}
+.magicgallery-shortcode-content .MagicToolboxSelectorsContainer img { 
+	-webkit-filter: none !important; 
+	filter: none !important; 
+	padding:0; 
+	border:none; 
+	opacity:0.6; 
+	box-shadow:none !important; 
+}
+.magicgallery-shortcode-content
+.MagicToolboxSelectorsContainer a:hover img,
+.magicgallery-shortcode-content
+.MagicToolboxSelectorsContainer .active-selector img {opacity:1; }

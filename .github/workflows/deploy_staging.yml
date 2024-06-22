@@ -1,0 +1,14 @@
+name: Deploy WordPress site on staging
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  call-deploy-workflow:
+    uses: ./.github/workflows/deploy-rds.yml
+    with:
+      ENV: STAGING
+      SSH_HOST: wp.harvest-staging-new.net
+      DB_HOST: harvest-wp-staging.cv0o02oiwmxz.ap-southeast-2.rds.amazonaws.com
+      SITE_DOMAINS: harvest-staging-new.net,id-api.harvest-staging-new.net,id-web.harvest-staging-new.net
+    secrets: inherit

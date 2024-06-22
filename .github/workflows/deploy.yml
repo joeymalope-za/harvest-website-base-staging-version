@@ -1,0 +1,57 @@
+name: Deploy WordPress site through SSH
+on:
+  workflow_call:
+    inputs:
+      ENV:
+        required: true
+        type: string
+      SSH_HOST:
+        required: true
+        type: string
+      SITE_DOMAINS:
+        required: true
+        type: string
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    env:
+      ZOHO_CLIENT_ID: ${{ secrets[format('ZOHO_CLIENT_ID_{0}', inputs.ENV)] }}
+      ZOHO_CLIENT_SECRET: ${{ secrets[format('ZOHO_CLIENT_SECRET_{0}', inputs.ENV)] }}
+      ZOHO_REFRESH_TOKEN: ${{ secrets[format('ZOHO_REFRESH_TOKEN_{0}', inputs.ENV)] }}
+      DAILYCO_API_KEY: ${{ secrets[format('DAILYCO_API_KEY_{0}', inputs.ENV)] }}
+      GCLOUD_KEY: ${{ secrets.GCLOUD_KEY }}
+      OPENAI_KEY: ${{ secrets[format('OPENAI_KEY_{0}', inputs.ENV)] }}
+      WP_HOST: ${{ inputs.SSH_HOST }}
+      SITE_DOMAINS: ${{ inputs.SITE_DOMAINS }}
+      WP_PASSWORD: ${{ secrets[format('{0}_WP_PASSWORD', inputs.ENV)] }}
+      server: ${{ inputs.SSH_HOST }}
+      server_path: /home/ubuntu/${{ github.event.repository.name }}/
+      ssh_key: ${{ secrets[format('{0}_SSH_KEY', inputs.ENV)] }}
+      HARVEST_ENV: ${{ inputs.ENV }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+      - uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ env.ssh_key }}
+      - name: Execute set_env script
+        run: python3 scripts/set_env.py
+      - name: Deploy container environment config
+        run: |
+          mkdir ce
+          mkdir ce/public
+          cp ./public/composer.* ce/public/
+          cp ./php.ini ce/
+          cp docker-compose.yml ce/
+          cp scripts/fix-wp-container.sh ce/
+          rsync -r -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" ce/ ubuntu@${{ env.server }}:${{ env.server_path }}
+      - name: Deploy containers
+        run: |
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ubuntu@${{ env.server }} \
+          "cd ${{ env.server_path }} && docker compose up -d && sleep 5"
+      - name: Execute deploy script
+        run: scripts/deploy_wp.sh
+      - name: Configure the container
+        run: |
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ubuntu@${{ env.server }} \
+          "cd ${{ env.server_path }} && chmod +x ./fix-wp-container.sh && ./fix-wp-container.sh"

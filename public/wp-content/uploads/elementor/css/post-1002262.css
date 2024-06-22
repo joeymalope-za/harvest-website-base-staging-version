@@ -1,0 +1,14 @@
+.elementor-1002262 .elementor-element.elementor-element-3836db4{--display:flex;--background-transition:0.3s;}/* Start custom CSS */df-messenger {
+    --df-messenger-button-titlebar-color: #fd6440;
+    --df-messenger-bot-message: #F9E3D9;
+    --df-messenger-user-message: #efefef;
+    --df-messenger-chat-background-color: #fff;
+    --df-messenger-focus-color-contrast: #fd6440;
+    --df-messenger-send-icon: #fd6440;
+    --df-messenger-focus-color: #fd6440;
+}
+@media screen and (max-width: 500px){
+.chat-wrapper.chat-open {
+    height: 92%!important;
+}
+}/* End custom CSS */

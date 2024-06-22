@@ -1,0 +1,12 @@
+.idea
+.env
+public/wp-content/cache/*
+*.log
+public/composer-setup.php
+public/.htaccess
+public/vendor/
+envs/*/vendor/
+public/wp-config.php
+public/wp-content/plugins/harvest/*
+public/wp-content/advanced-cache.php
+public/wp-content/wp-rocket-config/harvest.local.php

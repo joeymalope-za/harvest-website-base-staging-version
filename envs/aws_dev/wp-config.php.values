@@ -1,0 +1,3 @@
+KINSTA_DEV_ENV=true
+JETPACK_STAGING_MODE=true
+DB_HOST=harvest-wp-dev.cv0o02oiwmxz.ap-southeast-2.rds.amazonaws.com

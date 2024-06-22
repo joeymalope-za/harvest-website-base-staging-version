@@ -1,0 +1,239 @@
+
+# Changelog
+
+## 1.1.7
+
+	- Fixed issue where `GP Limit Submissions` and `Limit Submissions` were not internationalized strings.
+
+## 1.1.6
+
+	- Added [`gpls_should_apply_rules`](https://gravitywiz.com/documentation/gpls_should_apply_rules/) filter hook to determine whether limit submission rules should be evaluated.
+
+## 1.1.5
+
+	- Added [`gpls_should_enforce_on_render`](https://gravitywiz.com/documentation/gpls_should_enforce_on_render/) filter to allow modifying when GPLS enforces feed limits on render.
+
+## 1.1.4
+
+	- Added new [`gpls_calendar_periods`](https://gravitywiz.com/documentation/gpls_calendar_periods) filter hook.
+
+## 1.1.3
+
+	- Fixed issue where Field Value rules with Hidden fields would be incorrectly enforced on render when conditional logic feed rules were not met.
+	- Fixed a malformed MySQL query that could happen on initial render of a form when using Field Values rules set to multi-input fields such as Name fields.
+
+## 1.1.2
+
+	- Added support for applying limit collectively to all URLs from which the form is submitted.
+
+## 1.1.1
+
+	- Updated "Submission limit reached" notification event to only be available if a Limit Submissions feed is configured.
+
+## 1.1
+
+	- Added conditional logic for Limit Submissions feeds so feeds can be validated conditionally upon submission. Note, conditional logic is only available in the feed if using “Field Value” rules.
+
+## 1.0.9
+
+	- Improved compatibility with Gravity Flow's User Input step.
+	- Added new `gpls_limit_field_value` PHP filter.
+
+## 1.0.8
+
+	- Added [gpls_rule_type_choices](https://gravitywiz.com/documentation/gpls_rule_type_choices/) filter to allow filtering available rule types.
+	- Fixed fatal error that could occur if using Limit Submissions with Nested Forms and a parent form has a submission limit that's met and a child form that has not yet met its submission limit.
+	- Added "Update URI" to plugin header to improve security.
+	- Fixed issue where Limit Submission rules were not bypassed when editing existing entries with Gravity Flow User Input steps.
+	- Fixed issue where field values that are left blank in a group would cause the submissions to not be limited.
+
+## 1.0.7
+
+	- Added support for duplicating Limit Submissions feeds.
+
+## 1.0.6
+
+	- Updated form settings icon to be a lock rather than the default cog.
+	- Fixed fatal error that could occur if a field attached to a "Field Value" Rule Group was deleted.
+
+## 1.0.5
+
+	- Added support for using merge tags in the Limit Message.
+
+## 1.0.4
+
+	- Fixed a compatibility issue when working with a User Edit step in Gravity Flow.
+
+## 1.0.3
+
+	- Fixed validation compatibility with Gravity Flow.
+
+## 1.0.2
+
+	- Added the ability to use HTML in the Limit Message settings.
+	- Fixed an issue where GPLS displayed field types that cannot have value in Rule Groups.
+
+## 1.0.1
+
+	- Fixed an issue where limit error messages didn't show when a form is displayed via AJAX.
+
+## 1.0
+
+	- Updated version to 1.0. Limit Submissions is officially out of beta!
+
+## 1.0-beta-2.8
+
+	- Fixed a potential PHP error with gpls shortcode used in dashboard widgets.
+
+## 1.0-beta-2.7
+
+	- Added [`gpls_limit_message`](https://gravitywiz.com/documentation/gpls_limit_message) filter.
+
+## 1.0-beta-2.6
+
+	- Updated minimum Gravity Perks version to 2.2.3.
+	- Improved styling of Time Period settings when using Gravity Forms 2.5.
+	- Updated rule add/remove buttons in feed settings to use Gravity Forms 2.5 styling.
+
+## 1.0-beta-2.5
+
+	- Fixed issue where limit by form schedule did not correctly interpret the timezone.
+
+## 1.0-beta-2.4
+
+	- Fixed issue where embed URL rule would prevent submissions on all URLs after submission.
+
+## 1.0-beta-2.3
+
+	- Fixed extraneous space in time units dropdown on the "minute(s)" option.
+	- Improved reliability with Embed URL rules by ignoring trailing slashes.
+	- Added support for the new "Quarter" calendar period.
+
+## 1.0-beta-2.2
+
+	- Added support for using merge tags in the Submission Limit feed setting.
+
+## 1.0-beta-2.1
+
+	- Fixed various issues with rule group management in the feed settings page for Limit Submissions
+	- Fixed potential PHP notice in feed settings page.
+	- Added checks to ensure that fields exist still before applying GPLS rules.
+
+## 1.0-beta-2.0
+
+	- Added support for Gravity Forms 2.5.
+
+## 1.0-beta-1.23
+
+	- Fixed an issue where cascading style sheets would be injected in non-GF pages.
+
+## 1.0-beta-1.22
+
+	- Fixed issue where date field's limits were not being honored. (#2)
+
+## 1.0-beta-1.21
+
+	- Added [gpls_field_failed_validation](https://gravitywiz.com/documentation/gpls_field_failed_validation/) and [gpls_field_validation_message](https://gravitywiz.com/documentation/gpls_field_validation_message/) filters.
+
+## 1.0-beta-1.20
+
+	- Fixed styling issue with WordPress 5.3.
+	- Added [gpls_before_query](https://gravitywiz.com/documentation/gpls_before_query/) action to allow modifying the rule evaluation query before it is executed.
+
+## 1.0-beta-1.19
+
+	- Added [gpls_bypass_gravityview](https://gravitywiz.com/documentation/gpls_bypass_gravityview/) filter to allow validating limits when editing via GravityView.
+
+## 1.0-beta-1.18
+
+	- Updated to limit by post global (rather than URL) when limiting by post ID via the Embed URL option.
+	- Added support for serving minifying script and style files.
+	- Fixed conflict with ACF where both plugins loaded Select2.
+
+## 1.0-beta-1.17
+
+	- Fixed issue where input-specific limits were not being applied correctly.
+
+## 1.0-beta-1.16
+
+	- Fixed issue where Email fields with confirm option enabled were not limited properly.
+
+## 1.0-beta-1.15
+
+	- Fixed issue on multi-page forms where field value limits were validated prior to the page on which the field was placed.
+
+## 1.0-beta-1.14
+
+	- Fixed issue where limiting by a group of forms failed to count entries from all forms in the group.
+
+## 1.0-beta-1.13
+
+	- Fixed issue where time periods with a unit of "hours" were not correctly limited.
+
+## 1.0-beta-1.12
+
+	- Added ‘gp_limit_submissions_form_settings’ capability to enable fine grain user permission management with plugins such as Justin Tadlock’s Members plugin.
+
+## 1.0-beta-1.11
+
+	- Added support for filtering partial entries when applying limits.
+
+## 1.0-beta-1.10
+
+	- Added support for automatically detecting Sticky List and bypassing limit validation when editing entries.
+
+## 1.0-beta-1.9
+
+	- Fixed issue where limits based on field values prevented a child entry's existing values from being submitted when editing via Nested Forms.
+
+## 1.0-beta-1.8
+
+	- Added support for not enforcing limits when editing via Nested Forms or Gravity View.
+
+## 1.0-beta-1.7
+
+	- Fixed issue where the "month(s)" Time Period was not calculated correctly.
+
+## 1.0-beta-1.6
+
+	- Added logging support for test results; will help debug issues where users are reporting false positives.
+
+## 1.0-beta-1.5
+
+	- Updated GPLS_RuleGroup properties to be public to better support 3rd-party modifications.
+
+## 1.0-beta-1.4
+
+	- Updated instance of GPLS_Enforce to be available via GP_Limit_Submissions::$enforce property.
+
+## 1.0-beta-1.3
+
+	- Added support for limiting by anonymous users (not-logged-in).
+	- Updated verbiage of "All IPs" and "All Users" to better indicate that these rules apply to "each" user.
+
+## 0.9.10
+
+	- Added limit to get_users() to avoid issues with sites with many, many users. Added "gpls_rules_get_users_args" filter to allow modifying args used to fetch users for user-based rules.
+	- added match base url to embed rule
+	- Updated some verbiage.
+	- Added support for Select2 for Rule Groups UI; IN PROCESS: Modifying how limits are applied per form or across all applicable forms; Miscellaneous updates.
+	- Updated styling
+	- Fixed translatable strings
+	- Added placeholder for Time Period unit input
+	- Updated gpls-script to be enqueued in footer.
+	- Updated how scripts/styles are enqueued.
+	- Fixed issues with embed_url rule validation, release 0.9.4
+	- Added gpls shortcode, release v0.9.3
+	- added support for global rules with filter "gpls_rulegroups"
+	- added anonymous to list of user roles
+	- fixed removal of rule groups, data handling
+	- added "new" callback for repeater to fix value choices being hidden on add
+
+## 1.0-beta-1.2
+
+	- Updated role-based rules to use role slug rather than role name.
+
+## 1.0-beta-1.1
+
+	- Updated to use minimum_requirements() method for declaring minimum requirements.
+	- Fixed issue where some time period values could generate notices if not converted to int.

@@ -1,0 +1,481 @@
+{
+  "flow": {
+    "flow": {
+      "flowId": "00000000-0000-0000-0000-000000000000",
+      "displayName": "Patient Flow",
+      "description": "A start flow created along with the agent",
+      "transitionEvents": [ {
+        "triggerIntentId": "00000000-0000-0000-0000-000000000000",
+        "condition": {
+          "restriction": {
+            "comparator": "EQUALS",
+            "lhs": {
+              "value": "1"
+            },
+            "rhs": {
+              "value": "1"
+            }
+          }
+        },
+        "transitionEventHandler": {
+          "beforeTransition": {
+          
+          },
+          "targetPageId": "829caa25-ac08-4906-a691-df3c49409199"
+        },
+        "name": "89830d13-7f5e-468a-8adb-7461edc6e0a9"
+      } ],
+      "modelIdentifier": {
+        "modelId": "9536995e-74a3-4236-ae44-0e3b762baa3e"
+      },
+      "conversationEvents": [ {
+        "event": "sys.no-match-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "I didn't get that. Can you say it again?"
+                    }, {
+                      "text": "I missed what you said. What was that?"
+                    }, {
+                      "text": "Sorry, could you say that again?"
+                    }, {
+                      "text": "Sorry, can you say that again?"
+                    }, {
+                      "text": "Can you say that again?"
+                    }, {
+                      "text": "Sorry, I didn't get that. Can you rephrase?"
+                    }, {
+                      "text": "Sorry, what was that?"
+                    }, {
+                      "text": "One more time?"
+                    }, {
+                      "text": "What was that?"
+                    }, {
+                      "text": "Say that one more time?"
+                    }, {
+                      "text": "I didn't get that. Can you repeat?"
+                    }, {
+                      "text": "I missed that, say that again?"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "45065482-9dab-48e1-9a08-aa8e79d037e9"
+      }, {
+        "event": "sys.no-input-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "en"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "I didn't get that. Can you say it again?"
+                    }, {
+                      "text": "I missed what you said. What was that?"
+                    }, {
+                      "text": "Sorry, could you say that again?"
+                    }, {
+                      "text": "Sorry, can you say that again?"
+                    }, {
+                      "text": "Can you say that again?"
+                    }, {
+                      "text": "Sorry, I didn't get that. Can you rephrase?"
+                    }, {
+                      "text": "Sorry, what was that?"
+                    }, {
+                      "text": "One more time?"
+                    }, {
+                      "text": "What was that?"
+                    }, {
+                      "text": "Say that one more time?"
+                    }, {
+                      "text": "I didn't get that. Can you repeat?"
+                    }, {
+                      "text": "I missed that, say that again?"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "44632e61-1cbd-4748-af9f-f95e7e387a58"
+      }, {
+        "event": "start-bot",
+        "handler": {
+          "beforeTransition": {
+          
+          },
+          "targetPageId": "829caa25-ac08-4906-a691-df3c49409199"
+        },
+        "name": "8b221885-cd7e-4062-8fe2-21dd89d41aef"
+      } ],
+      "nluSettings": {
+        "classificationThreshold": 0.30000001,
+        "modelType": "MODEL_TYPE_STANDARD",
+        "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+        "customConfigKey": "d8219880-f56d-4b19-abeb-bb356bca3f6a",
+        "multiIntentSettings": {
+        
+        }
+      },
+      "ivrSettings": {
+        "enableIvr": true
+      },
+      "etag": "6454122f"
+    },
+    "intents": [ {
+      "meta": {
+        "id": "2fe38929-95d3-4111-b997-d12d7caf312a",
+        "displayName": "THC conditions",
+        "priority": 500000,
+        "etag": "64540c3f"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "anxiety"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "00000000-0000-0000-0000-000000000000",
+        "displayName": "Default Welcome Intent",
+        "priority": 500000
+      },
+      "trainingPhrases": [ {
+        "id": "73eb412b-c40f-4460-9e63-ec7000887779",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "just going to say hi"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "0578da0e-16c2-4a12-9f94-2c5680a1129a",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "heya"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "dcfb0e9a-60e9-4be7-b2d1-3bffb5ad8835",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hello hi"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "f9f0b2c2-c6b3-448b-b112-37fe0b935b7a",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "howdy"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "96fd4d05-1396-4183-9aaf-4c9d6f47f4d9",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hey there"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "19ff3e5a-246f-4ab4-a5c0-4b35dc502b6c",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hi there"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "583e75db-4c7d-42a4-a032-7ae47f881a17",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "greetings"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "68252edb-ab22-4e82-aca0-c79f1cfeb635",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hey"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "3846f6b1-6d22-41e7-9cda-a1994475ffdd",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "long time no see"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "81371065-8143-42fc-826f-761ceed99653",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hello"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "e21c2628-3f86-4560-b058-596e26dd5277",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "lovely day isn't it"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "8d4af689-f2af-4d3e-ada1-b0165467a06a",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "I greet you"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "eb30b707-8938-499a-9984-5cb1a9271249",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hello again"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "13958f8c-1cdc-4d96-acb0-74069a29502a",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hi"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "10946af3-d79e-41d0-abc4-596198b2947e",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hello there"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "f6e73843-c9dd-410f-8c96-f43e880d51ba",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hi there"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      }, {
+        "id": "1d429d1f-ed89-4b7c-9c2a-16216280fac3",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "a good day"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "e2be79d7-95df-43a9-81ba-bc84376cf4ca",
+        "displayName": "Non-THC conditions",
+        "priority": 500000,
+        "etag": "645406e6"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "acne",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "en"
+      } ]
+    }, {
+      "meta": {
+        "id": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Default Negative Intent",
+        "priority": 500000,
+        "isFallback": true
+      }
+    } ],
+    "pages": [ {
+      "key": "829caa25-ac08-4906-a691-df3c49409199",
+      "value": {
+        "displayName": "Recognize condition",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "en"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Welcome to Harvest Virtual Reception! What condition or symptom are you having issues with?"
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "e2be79d7-95df-43a9-81ba-bc84376cf4ca",
+          "condition": {
+            "restriction": {
+              "comparator": "EQUALS",
+              "lhs": {
+                "value": "1"
+              },
+              "rhs": {
+                "value": "1"
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "You are eligible for non-THC product category. Please see our store."
+                      } ]
+                    }
+                  } ]
+                }, {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "payload": {
+                      "richContent": [ [ {
+                        "icon": {
+                          "color": "#F78A2D",
+                          "type": "store"
+                        },
+                        "link": "/patient-reception",
+                        "text": "Browse the store",
+                        "type": "button"
+                      } ] ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "END_FLOW"
+          },
+          "name": "94021239-37df-4b82-9137-6bdcf00e8c46"
+        }, {
+          "triggerIntentId": "2fe38929-95d3-4111-b997-d12d7caf312a",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "You are eligible for THC products! Press the button to schedule a quick video call with the doctor."
+                      } ]
+                    }
+                  } ]
+                }, {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "payload": {
+                      "richContent": [ [ {
+                        "icon": {
+                          "color": "#F78A2D",
+                          "type": "face"
+                        },
+                        "link": "/patient-reception",
+                        "text": "Chat with doctor",
+                        "type": "button"
+                      } ] ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "END_FLOW"
+          },
+          "name": "a8701f11-e1e6-4547-8aba-d75493353890"
+        } ],
+        "conversationEvents": [ {
+          "event": "sys.no-match-default",
+          "handler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Sorry, your condition is not qualified for any CBD-based treatment. Please consult your healthcare provider."
+                      } ]
+                    }
+                  } ]
+                }, {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "en"
+                  },
+                  "responses": [ {
+                    "payload": {
+                      "result": {
+                        "condition": "$intent.params",
+                        "condition_category": "none"
+                      }
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "END_FLOW"
+          },
+          "name": "43ea652b-2eba-41b4-be22-264a2b28ffff"
+        } ],
+        "etag": "64542bc8"
+      }
+    } ]
+  }
+}

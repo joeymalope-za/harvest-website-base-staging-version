@@ -1,0 +1,76 @@
+RedirectMatch 403 ^/vendor/.*$
+<FilesMatch \.(json|lock)$>
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# 301 REDIRECTS FOR QR CODES
+Redirect 301 /9371496816552/ /product/cloud-9-rush-vape/
+Redirect 301 /9371496816328/ /product/cloud-9-neo-vape/
+Redirect 301 /621420906/ /product/hokey-pokey/
+Redirect 301 /621420906B/ /product/hokey-pokey/
+Redirect 301 /621420906R/ /product/hokey-pokey/
+Redirect 301 /621420906c/ /product/hokey-pokey/
+Redirect 301 /621420312R/ /product/bubblegum-nebula/
+Redirect 301 /621420312/ /product/bubblegum-nebula/
+Redirect 301 /621420312B/ /product/bubblegum-nebula/
+Redirect 301 /621420312c/ /product/bubblegum-nebula/
+Redirect 301 /621420003B/ /product/toffee-glaze/
+Redirect 301 /621420003/ /product/toffee-glaze/
+Redirect 301 /621420003c/ /product/toffee-glaze/
+Redirect 301 /621420003R/ /product/toffee-glaze/
+Redirect 301 /621420110R/ /product/space-crumble/
+Redirect 301 /621420110B/ /product/space-crumble/
+Redirect 301 /621420110/ /product/space-crumble/
+Redirect 301 /621420110c/ /product/space-crumble/
+Redirect 301 /621420002c/ /product/sherb-heights/
+Redirect 301 /621420002R/ /product/sherb-heights/
+Redirect 301 /621420002/ /product/sherb-heights/
+Redirect 301 /621420110B/ /product/sherb-heights/
+Redirect 301 /621420501R/ /product/pink-lemonade/
+Redirect 301 /621420501R/ /product/pink-lemonade/
+Redirect 301 /621420501c/ /product/pink-lemonade/
+Redirect 301 /621420501/ /product/pink-lemonade/
+Redirect 301 /621420907/ /product/karens-nightmare/
+Redirect 301 /621420907R/ /product/karens-nightmare/
+Redirect 301 /621420907B/ /product/karens-nightmare/
+Redirect 301 /621420907c/ /product/karens-nightmare/
+Redirect 301 /621420006/ /product/cinnamon-bomb/
+Redirect 301 /621420006R/ /product/cinnamon-bomb/
+Redirect 301 /621420006B/ /product/cinnamon-bomb/
+Redirect 301 /621420006c/ /product/cinnamon-bomb/
+Redirect 301 /621420406/ /product/cookies-n-cuddles/
+Redirect 301 /621420406B/ /product/cookies-n-cuddles/
+Redirect 301 /621420406R/ /product/cookies-n-cuddles/
+Redirect 301 /621420406c/ /product/cookies-n-cuddles/
+Redirect 301 /233420914/ /product/willy-wetter-lube/
+Redirect 301 /233420912/ /product/fister-lube/
+Redirect 301 /233420913/ /product/chicken-choker-lube/
+Redirect 301 /155420662/ /product/the-seagull-buddy-pouch/
+Redirect 301 /155420663/ /product/the-scabs-buddy-pouch/
+Redirect 301 /155420664/ /product/the-hog-buddy-pouch/
+Redirect 301 /732773663/ /product/orange-rise-n-grinder/
+Redirect 301 /732773631/ /product/green-rise-n-grinder/
+Redirect 301 /732773622/ /product/black-rise-n-grinder/
+Redirect 301 /8821496816691/ /product/mango-pack-n-puff/
+Redirect 301 /8821496816694/ /product/mint-pack-n-puff/
+Redirect 301 /8821496816693/ /product/grape-pack-n-puff/
+Redirect 301 /8821496816692/ /product/banana-pack-n-puff/
+Redirect 301 /811926250/ /product/green-cotton-mouth-killer/
+Redirect 301 /811926256/ /product/black-cotton-mouth-killer/
+Redirect 301 /811926258/ /product/cotton-mouth-killer-orange/
+Redirect 301 /155420665/ /product/repn-harvest-chain/
+Redirect 301 /155420667/ /product/travelling-sesh-kit/

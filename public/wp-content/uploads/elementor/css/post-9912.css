@@ -1,0 +1,15 @@
+:root{--page-title-display:none;}@media(max-width:767px){.elementor-9912 .elementor-element.elementor-element-a8d5926{text-align:center;}.elementor-9912 .elementor-element.elementor-element-a8d5926 img{width:100%;}}/* Start custom CSS */df-messenger {
+    --df-messenger-default-primary-color: #fd6440;
+    --df-messenger-message-bot-background: #F9E3D9;
+    --df-messenger-titlebar-title-align: center;
+    --df-messenger-default-border-radius: 14px;
+    --df-messenger-message-padding: 9px;
+    --df-messenger-titlebar-padding: 10px 15px;
+    --df-messenger-font-size: 16px;
+}
+@media screen and (max-width: 500px) {
+
+.chat-wrapper.fullscreen-small {
+     inset: 52px 0 0 0!important;
+}
+}/* End custom CSS */

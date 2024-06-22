@@ -1,0 +1,36 @@
+# @format
+
+version: "3"
+networks:
+  harvest-web_harvest_network:
+    external: true
+services:
+  mariadb:
+    image: mariadb:10.11.2
+    restart: always
+    networks:
+      - harvest-web_harvest_network
+    ports:
+      - 3307:3306
+    environment:
+      MARIADB_USER: harvestj
+      MARIADB_PASSWORD: harvestj
+      MARIADB_ROOT_PASSWORD: harvestj
+  wordpress:
+    image: wordpress:${WP_VERSION:-latest}
+    restart: always
+    ports:
+      - 80:80 #  ${WP_PORT:-8080}:80
+    depends_on:
+      - mariadb
+    networks:
+      - harvest-web_harvest_network
+
+    volumes:
+      - ./php.ini:/usr/local/etc/php/php.ini
+      - ./public:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: mariadb
+      WORDPRESS_DB_USER: harvestj
+      WORDPRESS_DB_PASSWORD: harvestj
+      WORDPRESS_DB_NAME: harvestj

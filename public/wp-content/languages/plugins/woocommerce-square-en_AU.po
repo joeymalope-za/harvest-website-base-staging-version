@@ -1,0 +1,2605 @@
+# Translation of Plugins - WooCommerce Square - Stable (latest release) in English (Australia)
+# This file is distributed under the same license as the Plugins - WooCommerce Square - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-12-24 03:52:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.11\n"
+"Language: en_AU\n"
+"Project-Id-Version: Plugins - WooCommerce Square - Stable (latest release)\n"
+
+#. translators: Placeholder: %s - product name
+#: includes/Sync/Records/Record.php:374
+msgid "%s variation not found in Square."
+msgstr "%s variation not found in Square."
+
+#: includes/Sync/Manual_Synchronization.php:1347
+msgid "This product failed to be hidden."
+msgstr "This product failed to be hidden."
+
+#. translators: Placeholder %s Product ID
+#: includes/Sync/Manual_Synchronization.php:1336
+msgid "%s does not exist in the Square catalog."
+msgstr "%s does not exist in the Square catalog."
+
+#. translators: Placeholder: %s - product ID
+#: includes/Sync/Manual_Synchronization.php:740
+msgid "Product #%s could not be updated."
+msgstr "Product #%s could not be updated."
+
+#. translators: Placeholder %1$s Product Name, %2$s Exception message
+#: includes/Sync/Interval_Polling.php:223
+#: includes/Sync/Manual_Synchronization.php:1371
+msgid "Could not sync %1$s data from Square. %2$s."
+msgstr "Could not sync %1$s data from Square. %2$s."
+
+#. translators: Placeholder %1$s Product Name, %2$s Exception message
+#: includes/Sync/Interval_Polling.php:200
+#: includes/Sync/Manual_Synchronization.php:1574
+msgid "%1$s was deleted in Square but could not be hidden in WooCommerce. %2$s."
+msgstr "%1$s was deleted in Square but could not be hidden in WooCommerce. %2$s."
+
+#. translators: Placeholders: %1$s - <strong> tag, %2$s - </strong> tag, %3$s -
+#. <a> tag, %4$s - </a> tag
+#: includes/Settings.php:266
+msgid "Choose where data will be updated for synced products. Inventory in Square is %1$salways%2$s checked for adjustments when sync is enabled.%3$s%4$sLearn more%5$s about choosing a system of record or %6$screate a ticket%7$s if you're experiencing technical issues."
+msgstr "Choose where data will be updated for synced products. Inventory in Square is %1$salways%2$s checked for adjustments when sync is enabled.%3$s%4$sLearn more%5$s about choosing a system of record or %6$screate a ticket%7$s if you're experiencing technical issues."
+
+#: includes/Settings.php:261
+msgid "Sync settings"
+msgstr "Sync settings"
+
+#: includes/Handlers/Sync.php:436
+msgid "Please do not close or navigate away from this page as the product import job is in progress. This page may load several times during the course of sync."
+msgstr "Please do not close or navigate away from this page as the product import job is in progress. This page may load several times during the course of sync."
+
+#. Translators: Placeholder: %1$s - product ID, %2$s - Exception message
+#: includes/Handlers/Product.php:404
+msgid "Image not updated from Square for product #%1$s. %2$s."
+msgstr "Image not updated from Square for product #%1$s. %2$s."
+
+#. translators: Placeholders: %1$s - opening <strong> HTML tag, %2$s closing
+#. </strong> HTML tag
+#: includes/Admin/Sync_Page.php:125
+msgid "%1$sSync setting not chosen.%2$s Products will not be synced between Square and WooCommerce."
+msgstr "%1$sSync setting not chosen.%2$s Products will not be synced between Square and WooCommerce."
+
+#: includes/Gateway/API/Response_Message_Helper.php:121
+#: includes/Gateway/API/Response_Message_Helper.php:123
+msgid "The card type is invalid or does not correlate with the credit card number. Please try again or use an alternate card or other form of payment."
+msgstr "The card type is invalid or does not correlate with the credit card number. Please try again or use an alternate card or other form of payment."
+
+#: includes/Gateway/API/Response_Message_Helper.php:117
+msgid "This order is being placed on hold for review due to an incorrect card verification number. You may contact the store to complete the transaction."
+msgstr "This order is being placed on hold for review due to an incorrect card verification number. You may contact the store to complete the transaction."
+
+#: includes/Gateway/API/Response_Message_Helper.php:107
+msgid "The card issuer declined the refund."
+msgstr "The card issuer declined the refund."
+
+#: includes/Gateway/API/Response_Message_Helper.php:106
+msgid "Square declined the request because the payment amount exceeded the processing limit for this seller."
+msgstr "Square declined the request because the payment amount exceeded the processing limit for this seller."
+
+#: includes/Gateway/API/Response_Message_Helper.php:105
+msgid "The postal code is incorrectly formatted."
+msgstr "The postal code is incorrectly formatted."
+
+#: includes/Gateway/API/Response_Message_Helper.php:104
+msgid "The card is not supported in the geographic region."
+msgstr "The card is not supported in the geographic region."
+
+#: includes/Gateway/API/Response_Message_Helper.php:103
+#: includes/Gateway/API/Response_Message_Helper.php:111
+msgid "The card expiration date is invalid or indicates that the card is expired."
+msgstr "The card expiration date is invalid or indicates that the card is expired."
+
+#: includes/Gateway/API/Response_Message_Helper.php:102
+msgid "The specified card number is invalid."
+msgstr "The specified card number is invalid."
+
+#: includes/Gateway/API/Response_Message_Helper.php:101
+msgid "A temporary internal error occurred. You can safely retry the payment."
+msgstr "A temporary internal error occurred. You can safely retry the payment."
+
+#: includes/Gateway/API/Response_Message_Helper.php:100
+msgid "The card issuer declined the request because the postal code is invalid."
+msgstr "The card issuer declined the request because the postal code is invalid."
+
+#: includes/Gateway/API/Response_Message_Helper.php:99
+msgid "The card issuer declined the request because the CVV value is invalid."
+msgstr "The card issuer declined the request because the CVV value is invalid."
+
+#: includes/Gateway/API/Response_Message_Helper.php:98
+msgid "The card issuer declined the request because the card is expired."
+msgstr "The card issuer declined the request because the card is expired."
+
+#: includes/Gateway/API/Response_Message_Helper.php:97
+msgid "The card issuer has determined the payment amount is too high or too low."
+msgstr "The card issuer has determined the payment amount is too high or too low."
+
+#: includes/Gateway/API/Response_Message_Helper.php:95
+msgid "The payment source has insufficient funds to cover the payment."
+msgstr "The payment source has insufficient funds to cover the payment."
+
+#: includes/Gateway/API/Response_Message_Helper.php:93
+msgid "The card issuer has declined the transaction due to restrictions on where the card can be used."
+msgstr "The card issuer has declined the transaction due to restrictions on where the card can be used."
+
+#: includes/Gateway/API/Response_Message_Helper.php:91
+msgid "The card expiration date is missing or incorrectly formatted."
+msgstr "The card expiration date is missing or incorrectly formatted."
+
+#: includes/Gateway/Digital_Wallet.php:97
+msgid "via WooCommerce"
+msgstr "via WooCommerce"
+
+#: includes/Settings.php:457
+msgid "You have made changes to the settings. Please save the changes to enable the button."
+msgstr "You have made changes to the settings. Please save the changes to enable the button."
+
+#. translators: link to documentation
+#: woocommerce-square.php:372
+msgid "&bull;&nbsp;<strong>Invalid OPcache config: </strong><a href=\"%s\" target=\"_blank\">Please ensure the <code>save_comments</code> PHP option is enabled.</a> You may need to contact your hosting provider to change caching options."
+msgstr "&bull;&nbsp;<strong>Invalid OPcache config: </strong><a href=\"%s\" target=\"_blank\">Please ensure the <code>save_comments</code> PHP option is enabled.</a> You may need to contact your hosting provider to change caching options."
+
+#. translators: minimum PHP version, current PHP version
+#: woocommerce-square.php:363
+msgid "&bull;&nbsp;<strong>Invalid PHP version: </strong>The minimum PHP version required is %1$s. You are running %2$s.<br>"
+msgstr "&bull;&nbsp;<strong>Invalid PHP version: </strong>The minimum PHP version required is %1$s. You are running %2$s.<br>"
+
+#. translators: plugin name
+#: woocommerce-square.php:355
+msgid "<strong>All features in %1$s have been disabled</strong> due to unsupported settings:<br>"
+msgstr "<strong>All features in %1$s have been disabled</strong> due to unsupported settings:<br>"
+
+#: includes/Framework/Utilities/WP_Background_Job_Handler.php:641
+msgid "Every %d Minutes"
+msgstr "Every %d Minutes"
+
+#: includes/Framework/Square_Helper.php:219
+#: includes/Utilities/Array_Utility.php:90
+msgctxt "coordinating conjunction for a list of items: a, b, and c"
+msgid "and"
+msgstr "and"
+
+#. translators: Placeholders: %1$s - <strong>, %2$s - </strong>
+#: includes/Framework/Plugin_Dependencies.php:249
+msgid ""
+"Hey there! We've noticed that your server is running %1$san outdated version of PHP%2$s, which is the programming language that WooCommerce and its extensions are built on.\n"
+"\t\t\t\t\tThe PHP version that is currently used for your site is no longer maintained, nor %1$sreceives security updates%2$s; newer versions are faster and more secure.\n"
+"\t\t\t\t\tAs a result, %3$s no longer supports this version and you should upgrade PHP as soon as possible.\n"
+"\t\t\t\t\tYour hosting provider can do this for you. %4$sHere are some resources to help you upgrade%5$s and to explain PHP versions further."
+msgstr ""
+"Hey there! We've noticed that your server is running %1$san outdated version of PHP%2$s, which is the programming language that WooCommerce and its extensions are built on.\n"
+"\t\t\t\t\tThe PHP version that is currently used for your site is no longer maintained, nor %1$sreceives security updates%2$s; newer versions are faster and more secure.\n"
+"\t\t\t\t\tAs a result, %3$s no longer supports this version and you should upgrade PHP as soon as possible.\n"
+"\t\t\t\t\tYour hosting provider can do this for you. %4$sHere are some resources to help you upgrade%5$s and to explain PHP versions further."
+
+#: includes/Framework/Plugin_Dependencies.php:227
+msgid "Please contact your hosting provider or server administrator to configure these settings."
+msgstr "Please contact your hosting provider or server administrator to configure these settings."
+
+#. translators: Placeholders: %s - a PHP setting value
+#: includes/Framework/Plugin_Dependencies.php:217
+msgid "%s or higher"
+msgstr "%s or higher"
+
+#. translators: Placeholders: %s - plugin name
+#: includes/Framework/Plugin_Dependencies.php:203
+msgid "%s may behave unexpectedly because the following PHP configuration settings are required:"
+msgstr "%s may behave unexpectedly because the following PHP configuration settings are required:"
+
+#: includes/Framework/Plugin.php:660
+msgid "Configure"
+msgstr "Configure"
+
+#. translators: Placeholders: %1$s = Current PHP setting value set as, %2$s =
+#. Minimum required PHP setting value
+#: includes/Framework/Plugin.php:475
+msgid "Set as %1$s - %2$s is required."
+msgstr "Set as %1$s - %2$s is required."
+
+#. translators: Placeholders: %1$s = Current PHP setting value, %2$s = Minimum
+#. required PHP setting value
+#: includes/Framework/Plugin.php:465
+msgid "%1$s - A minimum of %2$s is required."
+msgstr "%1$s - A minimum of %2$s is required."
+
+#. translators: Placeholders: %1$s - plugin name, %2$s - a PHP
+#. function/comma-separated list of PHP functions
+#: includes/Framework/Plugin_Dependencies.php:172
+msgid "%1$s requires the %2$s PHP function to exist.  Contact your host or server administrator to install and configure the missing function."
+msgid_plural "%1$s requires the following PHP functions to exist: %2$s.  Contact your host or server administrator to install and configure the missing functions."
+msgstr[0] "%1$s requires the %2$s PHP function to exist.  Contact your host or server administrator to install and configure the missing function."
+msgstr[1] "%1$s requires the following PHP functions to exist: %2$s.  Contact your host or server administrator to install and configure the missing functions."
+
+#. translators: Placeholders: %1$s - plugin name, %2$s - a PHP
+#. extension/comma-separated list of PHP extensions
+#: includes/Framework/Plugin_Dependencies.php:144
+msgid "%1$s requires the %2$s PHP extension to function. Contact your host or server administrator to install and configure the missing extension."
+msgid_plural "%1$s requires the following PHP extensions to function: %2$s. Contact your host or server administrator to install and configure the missing extensions."
+msgstr[0] "%1$s requires the %2$s PHP extension to function. Contact your host or server administrator to install and configure the missing extension."
+msgstr[1] "%1$s requires the following PHP extensions to function: %2$s. Contact your host or server administrator to install and configure the missing extensions."
+
+#: includes/Framework/Plugin.php:383
+msgctxt "verb"
+msgid "Review"
+msgstr "Review"
+
+#: includes/Framework/Plugin.php:378
+msgctxt "noun"
+msgid "Support"
+msgstr "Support"
+
+#. translators: Docs as in Documentation
+#: includes/Framework/Plugin.php:373
+msgid "Docs"
+msgstr "Docs"
+
+#. translators: Placeholders: %s - plugin name
+#: includes/Framework/Plugin.php:240
+msgid "You cannot unserialize instances of %s."
+msgstr "You cannot unserialise instances of %s."
+
+#. translators: Placeholders: %s - plugin name
+#: includes/Framework/Plugin.php:229
+msgid "You cannot clone instances of %s."
+msgstr "You cannot clone instances of %s."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Privacy.php:304
+msgid "Expiry Date"
+msgstr "Expiry Date"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Privacy.php:302
+msgid "Account Type"
+msgstr "Account Type"
+
+#. translators: Placeholder %d - Payment token
+#: includes/Framework/PaymentGateway/Payment_Gateway_Privacy.php:257
+msgid "Removed payment token \"%d\""
+msgstr "Removed payment token \"%d\""
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Privacy.php:185
+msgid "Type"
+msgstr "Type"
+
+#. translators: Placeholder %s - Customer ID
+#: includes/Framework/PaymentGateway/Payment_Gateway_Privacy.php:115
+msgid "%s Customer ID"
+msgstr "%s Customer ID"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Plugin.php:797
+msgid "Inactive"
+msgstr "Inactive"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Plugin.php:796
+msgid "You must enable tokenization for this gateway in order to support automatic renewal payments with the WooCommerce Subscriptions extension."
+msgstr "You must enable tokenisation for this gateway in order to support automatic renewal payments with the WooCommerce Subscriptions extension."
+
+#. translators: Placeholders: %1$s - payment gateway title (such as
+#. Authorize.net, Braintree, etc), %2$s - <a> tag, %3$s - </a> tag
+#: includes/Framework/PaymentGateway/Payment_Gateway_Plugin.php:755
+msgid "%1$s is inactive for pre-order transactions. Please %2$senable tokenization%3$s to activate %1$s for Pre-Orders."
+msgstr "%1$s is inactive for pre-order transactions. Please %2$senable tokenisation%3$s to activate %1$s for Pre-Orders."
+
+#. translators: Placeholders: %1$s - payment gateway title (such as
+#. Authorize.net, Braintree, etc), %2$s - <a> tag, %3$s - </a> tag
+#: includes/Framework/PaymentGateway/Payment_Gateway_Plugin.php:733
+msgid "%1$s is inactive for subscription transactions. Please %2$senable tokenization%3$s to activate %1$s for Subscriptions."
+msgstr "%1$s is inactive for subscription transactions. Please %2$senable tokenisation%3$s to activate %1$s for Subscriptions."
+
+#. translators: Placeholders: %1$s - payment gateway name, %2$s - opening <a>
+#. tag, %3$s - closing </a> tag
+#: includes/Framework/PaymentGateway/Payment_Gateway_Plugin.php:689
+msgid "Heads up! %1$s is currently configured to log transaction data for debugging purposes. If you are not experiencing any problems with payment processing, we recommend %2$sturning off Debug Mode%3$s"
+msgstr "Heads up! %1$s is currently configured to log transaction data for debugging purposes. If you are not experiencing any problems with payment processing, we recommend %2$sturning off Debug Mode%3$s"
+
+#. translators: Placeholders: %s - payment gateway name
+#: includes/Framework/PaymentGateway/Payment_Gateway_Plugin.php:590
+msgid "%s will soon require TLS 1.2 support to process transactions and your server environment may need to be updated. Please contact your hosting provider to confirm that your site can send and receive TLS 1.2 connections and request they make any necessary updates."
+msgstr "%s will soon require TLS 1.2 support to process transactions and your server environment may need to be updated. Please contact your hosting provider to confirm that your site can send and receive TLS 1.2 connections and request they make any necessary updates."
+
+#. translators: Placeholders: %1$s - plugin name, %2$s - <a> tag, %3$s - </a>
+#. tag
+#: includes/Framework/PaymentGateway/Payment_Gateway_Plugin.php:570
+msgid "%1$s: WooCommerce is not being forced over SSL; your customers' payment data may be at risk. %2$sVerify your site URLs here%3$s"
+msgstr "%1$s: WooCommerce is not being forced over SSL; your customers' payment data may be at risk. %2$sVerify your site URLs here%3$s"
+
+#. translators: Placeholders: %1$s - plugin name, %2$s - a
+#. currency/comma-separated list of currencies, %3$s - <a> tag, %4$s - </a> tag
+#: includes/Framework/PaymentGateway/Payment_Gateway_Plugin.php:650
+msgid "%1$s accepts payment in %2$s only. %3$sConfigure%4$s WooCommerce to accept %2$s to enable this gateway for checkout."
+msgid_plural "%1$s accepts payment in one of %2$s only. %3$sConfigure%4$s WooCommerce to accept one of %2$s to enable this gateway for checkout."
+msgstr[0] "%1$s accepts payment in %2$s only. %3$sConfigure%4$s WooCommerce to accept %2$s to enable this gateway for checkout."
+msgstr[1] "%1$s accepts payment in one of %2$s only. %3$sConfigure%4$s WooCommerce to accept one of %2$s to enable this gateway for checkout."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Payment_Form.php:659
+msgid "Securely Save to Account"
+msgstr "Securely Save to Account"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Payment_Form.php:591
+msgid "Use a new bank account"
+msgstr "Use a new bank account"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Payment_Form.php:591
+msgid "Use a new card"
+msgstr "Use a new card"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Payment_Form.php:452
+msgid "Manage Payment Methods"
+msgstr "Manage Payment Methods"
+
+#. translators: Test mode refers to the current software environment
+#: includes/Framework/PaymentGateway/Payment_Gateway_Payment_Form.php:371
+msgid "TEST MODE ENABLED"
+msgstr "TEST MODE ENABLED"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Privacy.php:201
+msgid "Nickname"
+msgstr "Nickname"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Helper.php:251
+msgctxt "credit card type"
+msgid "Laser"
+msgstr "Laser"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Helper.php:247
+msgctxt "credit card type"
+msgid "Maestro"
+msgstr "Maestro"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Helper.php:243
+msgctxt "credit card type"
+msgid "CarteBleue"
+msgstr "CarteBleue"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Helper.php:231
+msgctxt "credit card type"
+msgid "Diners Club"
+msgstr "Diners Club"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Helper.php:183
+msgctxt "payment method type"
+msgid "Account"
+msgstr "Account"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Helper.php:174
+msgid "Bank Account"
+msgstr "Bank Account"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Helper.php:173
+msgid "Credit / Debit Card"
+msgstr "Credit / Debit Card"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Helper.php:172
+msgid "Savings Account"
+msgstr "Savings Account"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Helper.php:171
+msgid "Checking Account"
+msgstr "Checking Account"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Helper.php:170
+msgid "PayPal"
+msgstr "PayPal"
+
+#. translators: Placeholders: %1$s - site title, %2$s - customer email. Payment
+#. method as in a specific credit card, e-check or bank account
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:1212
+msgid "%1$s - Add Payment Method for %2$s"
+msgstr "%1$s - Add Payment Method for %2$s"
+
+#. translators: Payment method as in a specific credit card, e-check or bank
+#. account
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:1083
+msgid "Nice! New payment method added."
+msgstr "Nice! New payment method added."
+
+#. translators: Placeholder: %1$s - card name, %2$s - card's last four digits,
+#. %3$s - card's expiration date.
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:1075
+msgid "Nice! New payment method added: %1$s ending in %2$s (expires %3$s)"
+msgstr "Nice! New payment method added: %1$s ending in %2$s (expires %3$s)"
+
+#. translators: Placeholders: %s - failure message. Payment method as in a
+#. specific credit card, e-check or bank account
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:1032
+msgid "Oops, adding your new payment method failed: %s"
+msgstr "Oops, adding your new payment method failed: %s"
+
+#. translators: Placeholders: %1$s - payment method title, %2$s - failure
+#. message
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:996
+msgid "%1$s Tokenization Request Failed: %2$s"
+msgstr "%1$s Tokenisation Request Failed: %2$s"
+
+#. translators: Placeholders: %s - failure message
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:985
+msgid "Tokenization Request Failed: %s"
+msgstr "Tokenisation Request Failed: %s"
+
+#. translators: Placeholder: %s Error message.
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:513
+msgid "Payment method address could not be updated. %s"
+msgstr "Payment method address could not be updated. %s"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:504
+msgid "Unknown error"
+msgstr "Unknown error"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:66
+msgid "Payment error, please try another payment method or contact us to complete your transaction."
+msgstr "Payment error, please try another payment method or contact us to complete your transaction."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3770
+msgctxt "software environment"
+msgid "Production"
+msgstr "Production"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3313
+msgid "Allow customers to securely save their payment details for future checkout."
+msgstr "Allow customers to securely save their payment details for future checkout."
+
+#. translators:
+#. http://www.cybersource.com/products/payment_security/payment_tokenization/
+#. and https://en.wikipedia.org/wiki/Tokenization_(data_security)
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3312
+msgid "Tokenization"
+msgstr "Tokenisation"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3254
+#: includes/Framework/PaymentGateway/Payment_Gateway_Helper.php:239
+msgctxt "credit card type"
+msgid "JCB"
+msgstr "JCB"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3253
+msgctxt "credit card type"
+msgid "Diners"
+msgstr "Diners"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3252
+#: includes/Framework/PaymentGateway/Payment_Gateway_Helper.php:235
+msgctxt "credit card type"
+msgid "Discover"
+msgstr "Discover"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3251
+#: includes/Framework/PaymentGateway/Payment_Gateway_Helper.php:227
+msgctxt "credit card type"
+msgid "American Express"
+msgstr "American Express"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3250
+#: includes/Framework/PaymentGateway/Payment_Gateway_Helper.php:223
+msgctxt "credit card type"
+msgid "MasterCard"
+msgstr "MasterCard"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3249
+#: includes/Framework/PaymentGateway/Payment_Gateway_Helper.php:219
+msgctxt "credit card type"
+msgid "Visa"
+msgstr "Visa"
+
+#. translators: Placeholders: %1$s - <strong> tag, %2$s - </strong> tag
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3221
+msgid "This setting %1$sdoes not%2$s change which card types the gateway will accept. Accepted cards are configured from your payment processor account."
+msgstr "This setting %1$sdoes not%2$s change which card types the gateway will accept. Accepted cards are configured from your payment processor account."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3218
+msgid "These are the card logos that are displayed to customers as accepted during checkout."
+msgstr "These are the card logos that are displayed to customers as accepted during checkout."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3216
+msgid "Accepted Card Logos"
+msgstr "Accepted Card Logos"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3028
+msgid "a paid status"
+msgstr "a paid status"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3027
+msgid "Automatically capture orders when they are changed to %s."
+msgstr "Automatically capture orders when they are changed to %s."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3024
+msgid "Capture Paid Orders"
+msgstr "Capture Paid Orders"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3021
+msgctxt "coordinating conjunction for a list of order statuses: on-hold, processing, or completed"
+msgid "or"
+msgstr "or"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3012
+msgid "Allow orders to be partially captured multiple times."
+msgstr "Allow orders to be partially captured multiple times."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3010
+msgid "Enable Partial Capture"
+msgstr "Enable Partial Capture"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3002
+msgid "If the order contains exclusively virtual items, enable this to immediately charge, rather than authorize, the transaction."
+msgstr "If the order contains exclusively virtual items, enable this to immediately charge, rather than authorise, the transaction."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:3000
+msgid "Charge Virtual-Only Orders"
+msgstr "Charge Virtual-Only Orders"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2989
+msgid "Select how transactions should be processed. Charge submits all transactions for settlement, Authorization simply authorizes the order total for capture later."
+msgstr "Select how transactions should be processed. Charge submits all transactions for settlement, Authorisation simply authorises the order total for capture later."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2987
+msgid "Transaction Type"
+msgstr "Transaction Type"
+
+#. translators: Placeholders: %1$s - payment gateway title, %2$s - error
+#. message; e.g. Order Note: [Payment method] Payment failed [error]
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2738
+msgid "%1$s Payment Failed (%2$s)"
+msgstr "%1$s Payment Failed (%2$s)"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2691
+msgid "Your order has been received and is being reviewed. Thank you for your business."
+msgstr "Your order has been received and is being reviewed. Thank you for your business."
+
+#. translators: Placeholders: %1$s - payment gateway title, %2$s - message
+#. (probably reason for the transaction being held for review)
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2650
+msgid "%1$s Transaction Held for Review (%2$s)"
+msgstr "%1$s Transaction Held for Review (%2$s)"
+
+#. translators: Placeholders: %s - credit card expiry date
+#. translators: Placeholders: %s - Gift card expiry date
+#. translators: Placeholders: %s - expiry date
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2611
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:671
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:754
+#: includes/Framework/PaymentGateway/Payment_Gateway_Payment_Form.php:550
+msgid "(expires %s)"
+msgstr "(expires %s)"
+
+#. translators: Placeholders: %1$s - credit card type (MasterCard, Visa,
+#. etc...), %2$s - last four digits of the card
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2600
+msgid "%1$s ending in %2$s"
+msgstr "%1$s ending in %2$s"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2593
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2992
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:660
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:745
+msgctxt "noun, credit card transaction type"
+msgid "Charge"
+msgstr "Charge"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2593
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2993
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:660
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:745
+msgctxt "credit card transaction type"
+msgid "Authorization"
+msgstr "Authorisation"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2592
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:659
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:744
+msgctxt "noun, software environment"
+msgid "Test"
+msgstr "Test"
+
+#. translators: Placeholders: %1$s - payment method title, %2$s - environment
+#. ("Test"), %3$s - transaction type (authorization/charge)
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2590
+msgid "%1$s %2$s %3$s Approved"
+msgstr "%1$s %2$s %3$s Approved"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2381
+msgctxt "hash before order number"
+msgid "#"
+msgstr "#"
+
+#. translators: Placeholders: %1$s - payment gateway title, %2$s - a monetary
+#. amount. Void as in to void an order.
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2306
+msgid "%1$s Void in the amount of %2$s approved."
+msgstr "%1$s Void in the amount of %2$s approved."
+
+#. translators: Placeholders: %1$s - payment gateway title, %2$s - error
+#. message. Void as in to void an order.
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2282
+msgid "%1$s Void Failed: %2$s"
+msgstr "%1$s Void Failed: %2$s"
+
+#. translators: Placeholders: %1$s - payment gateway title, %2$s - error code,
+#. %3$s - error message. Void as in to void an order.
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2274
+msgid "%1$s Void Failed: %2$s - %3$s"
+msgstr "%1$s Void Failed: %2$s - %3$s"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2205
+msgid "Oops, you cannot partially void this order. Please use the full order amount."
+msgstr "Oops, you cannot partially void this order. Please use the full order amount."
+
+#. translators: Placeholders: %s - payment gateway title (such as
+#. Authorize.net, Braintree, etc)
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2150
+#: includes/Gateway.php:1400
+msgid "%s Order completely refunded."
+msgstr "%s Order completely refunded."
+
+#. translators: Placeholders: %1$s - payment gateway title (such as
+#. Authorize.net, Braintree, etc), %2$s - error message
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2129
+msgid "%1$s Refund Failed: %2$s"
+msgstr "%1$s Refund Failed: %2$s"
+
+#. translators: Placeholders: %1$s - payment gateway title (such as
+#. Authorize.net, Braintree, etc), %2$s - error code, %3$s - error message
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2121
+msgid "%1$s Refund Failed: %2$s - %3$s"
+msgstr "%1$s Refund Failed: %2$s - %3$s"
+
+#. translators: Placeholders: %1$s - payment gateway title (such as
+#. Authorize.net, Braintree, etc), %2$s - a monetary amount
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2066
+msgid "%1$s Refund in the amount of %2$s approved."
+msgstr "%1$s Refund in the amount of %2$s approved."
+
+#. translators: Placeholders: %1$s - site title, %2$s - order number
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2013
+msgid "%1$s - Refund for Order %2$s"
+msgstr "%1$s - Refund for Order %2$s"
+
+#. translators: Placeholders: %1$s - site title, %2$s - order number.
+#. Definitions: Capture as in capture funds from a credit card.
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1767
+msgid "%1$s - Capture for Order %2$s"
+msgstr "%1$s - Capture for Order %2$s"
+
+#. translators: Placeholders: %1$s - site title, %2$s - order number
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1643
+msgid "%1$s - Order %2$s"
+msgstr "%1$s - Order %2$s"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1362
+msgid "Display the Card Security Code field when paying with a saved card"
+msgstr "Display the Card Security Code field when paying with a saved card"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1361
+msgid "Saved Card Verification"
+msgstr "Saved Card Verification"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1353
+msgid "Display the Card Security Code (CV2) field on checkout"
+msgstr "Display the Card Security Code (CV2) field on checkout"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1352
+msgid "Card Verification (CSC)"
+msgstr "Card Verification (CSC)"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1335
+msgid "Disabled because the other gateway is using these settings"
+msgstr "Disabled because the other gateway is using these settings"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1332
+msgid "Use connection/authentication settings from other gateway"
+msgstr "Use connection/authentication settings from other gateway"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1330
+msgid "Share connection settings"
+msgstr "Share connection settings"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1276
+msgid "Select the gateway environment to use for transactions."
+msgstr "Select the gateway environment to use for transactions."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1130
+msgid "Pay securely using your credit card."
+msgstr "Pay securely using your credit card."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:703
+msgid "Thank you for your order."
+msgstr "Thank you for your order."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:671
+msgid "Continue"
+msgstr "Continue"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:533
+msgid "Routing number is invalid (must be 9 digits)"
+msgstr "Routing number is invalid (must be 9 digits)"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:532
+msgid "Routing Number is invalid (only digits are allowed)"
+msgstr "Routing Number is invalid (only digits are allowed)"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:531
+msgid "Routing Number is missing"
+msgstr "Routing Number is missing"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:530
+msgid "Account number is invalid (must be between 5 and 17 digits)"
+msgstr "Account number is invalid (must be between 5 and 17 digits)"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:529
+msgid "Account Number is invalid (only digits are allowed)"
+msgstr "Account Number is invalid (only digits are allowed)"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:528
+msgid "Account Number is missing"
+msgstr "Account Number is missing"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:527
+msgid "Drivers license number is invalid"
+msgstr "Drivers license number is invalid"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:526
+msgid "Drivers license number is missing"
+msgstr "Drivers license number is missing"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:525
+msgid "Drivers license state is missing"
+msgstr "Drivers license state is missing"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:524
+msgid "Check Number is missing"
+msgstr "Check Number is missing"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:523
+msgid "Check Number is invalid (only digits are allowed)"
+msgstr "Check Number is invalid (only digits are allowed)"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:522
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:164
+msgid "Card expiration date is invalid"
+msgstr "Card expiration date is invalid"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:521
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:236
+msgid "Card security code is invalid (must be 3 or 4 digits)"
+msgstr "Card security code is invalid (must be 3 or 4 digits)"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:520
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:230
+msgid "Card security code is invalid (only digits are allowed)"
+msgstr "Card security code is invalid (only digits are allowed)"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:519
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:241
+msgid "Card security code is missing"
+msgstr "Card security code is missing"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:518
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:194
+msgid "Card number is invalid (wrong length)"
+msgstr "Card number is invalid (wrong length)"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:517
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:199
+msgid "Card number is invalid (only digits allowed)"
+msgstr "Card number is invalid (only digits allowed)"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:516
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:204
+msgid "Card number is invalid"
+msgstr "Card number is invalid"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:515
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:188
+msgid "Card number is missing"
+msgstr "Card number is missing"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:385
+msgid "you successfully processed a refund!"
+msgstr "you successfully processed a refund!"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:377
+msgid "you successfully processed a payment!"
+msgstr "you successfully processed a payment!"
+
+#. translators: Placeholders: %1$s - payment gateway title (such as
+#. Authorize.net, Braintree, etc), %2$s - payment method name (mastercard, bank
+#. account, etc), %3$s - last four digits of the card/account, %4$s -
+#. card/account expiry date
+#: includes/Framework/PaymentGateway/PaymentTokens/Payment_Gateway_Payment_Tokens_Handler.php:877
+msgid "%1$s Payment Method Saved: %2$s ending in %3$s (expires %4$s)"
+msgstr "%1$s Payment Method Saved: %2$s ending in %3$s (expires %4$s)"
+
+#. translators: Placeholders: %s Transation ID.
+#: includes/Framework/PaymentGateway/PaymentTokens/Payment_Gateway_Payment_Tokens_Handler.php:267
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2414
+msgid "Transaction ID %s"
+msgstr "Transaction ID %s"
+
+#: includes/Framework/PaymentGateway/PaymentTokens/Payment_Gateway_Payment_Tokens_Handler.php:261
+msgid "Unknown Error"
+msgstr "Unknown Error"
+
+#. translators: Placeholders: %s - payment request response status message
+#. translators: Placeholders; %s - status message
+#. translators: Placeholder: %s The status message.
+#: includes/Framework/PaymentGateway/PaymentTokens/Payment_Gateway_Payment_Tokens_Handler.php:259
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2409
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:1118
+msgid "Status message: %s"
+msgstr "Status message: %s"
+
+#. translators: Placeholders: %s - payment request response status code
+#. translators: Placeholders: %s - status code
+#. translators: Placeholder: %s The status code.
+#: includes/Framework/PaymentGateway/PaymentTokens/Payment_Gateway_Payment_Tokens_Handler.php:256
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2406
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:1115
+msgid "Status code: %s"
+msgstr "Status code: %s"
+
+#. translators: Placeholders: %1$s - payment request response status code, %2$s
+#. - payment request response status message
+#. translators: Placeholders: %1$s - status code, %2$s - status message
+#. translators: Placeholder: %s The status code.
+#: includes/Framework/PaymentGateway/PaymentTokens/Payment_Gateway_Payment_Tokens_Handler.php:253
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2403
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:1112
+msgid "Status code %1$s: %2$s"
+msgstr "Status code %1$s: %2$s"
+
+#. translators: %1$s payment token label.
+#. translators: %1$s customer label.
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Subscriptions.php:705
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Subscriptions.php:711
+msgid "%s is required."
+msgstr "%s is required."
+
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Subscriptions.php:675
+msgid "Payment Token"
+msgstr "Payment Token"
+
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Subscriptions.php:623
+msgid "This payment method is tied to a subscription and cannot be deleted. Please switch the subscription to another method first."
+msgstr "This payment method is tied to a subscription and cannot be deleted. Please switch the subscription to another method first."
+
+#. translators: %1$s subscription order URL, %2$s is order ID.
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Subscriptions.php:584
+msgctxt "hash before order number"
+msgid "#%s"
+msgstr "#%s"
+
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Subscriptions.php:553
+msgid "Subscriptions"
+msgstr "Subscriptions"
+
+#. translators: Placeholders: %1$s - payment gateway title, %2$s - error
+#. message; e.g. Order Note: [Payment method] Payment Change failed [error]
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Subscriptions.php:383
+msgid "%1$s Payment Change Failed (%2$s)"
+msgstr "%1$s Payment Change Failed (%2$s)"
+
+#. translators: %1$s is Site name, %2$s is order ID.
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Subscriptions.php:256
+msgid "%1$s - Subscription Renewal Order %2$s"
+msgstr "%1$s - Subscription Renewal Order %2$s"
+
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Subscriptions.php:229
+msgid "Subscription Renewal: payment token is missing/invalid."
+msgstr "Subscription Renewal: payment token is missing/invalid."
+
+#. translators: %s release payment failure message.
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Pre_Orders.php:370
+msgid "Pre-Order Release Payment Failed: %s"
+msgstr "Pre-Order Release Payment Failed: %s"
+
+#. translators: This is a message describing that the transaction in question
+#. only performed a credit card authorization and did not capture any funds.
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Pre_Orders.php:352
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1687
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:888
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:933
+msgid "Authorization only transaction"
+msgstr "Authorisation only transaction"
+
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Pre_Orders.php:299
+msgid "Payment token missing/invalid."
+msgstr "Payment token missing/invalid."
+
+#. translators: %s pre-order tokenization failure message.
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Pre_Orders.php:248
+msgid "Pre-Order Tokenization attempt failed (%s)"
+msgstr "Pre-Order Tokenisation attempt failed (%s)"
+
+#. translators: Placeholders: %1$s - payment gateway title (such as
+#. Authorize.net, Braintree, etc), %2$s - failure message. Definitions:
+#. "capture" as in capturing funds from a credit card.
+#: includes/Framework/PaymentGateway/Handlers/Capture.php:256
+msgid "%1$s Capture Failed: %2$s"
+msgstr "%1$s Capture Failed: %2$s"
+
+#. translators: %s transaction ID
+#. translators: %s transaction id
+#. translators %s transaction ID.
+#. translators: Placeholders: %s - transaction ID
+#: includes/Framework/PaymentGateway/Handlers/Capture.php:225
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Pre_Orders.php:335
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2073
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2100
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2313
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2619
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:679
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:761
+msgid "(Transaction ID %s)"
+msgstr "(Transaction ID %s)"
+
+#. translators: Placeholders: %1$s - payment gateway title (such as
+#. Authorize.net, Braintree, etc), %2$s - transaction amount. Definitions:
+#. Capture, as in capture funds from a credit card.
+#: includes/Framework/PaymentGateway/Payment_Gateway_Direct.php:943
+msgid "%1$s Capture of %2$s Approved"
+msgstr "%1$s Capture of %2$s Approved"
+
+#: includes/Framework/PaymentGateway/Handlers/Capture.php:171
+msgid "Transaction cannot be captured"
+msgstr "Transaction cannot be captured"
+
+#: includes/Framework/PaymentGateway/Handlers/Capture.php:166
+msgid "Transaction has already been fully captured"
+msgstr "Transaction has already been fully captured"
+
+#: includes/Framework/PaymentGateway/Handlers/Capture.php:161
+msgid "Transaction authorization has expired"
+msgstr "Transaction authorisation has expired"
+
+#: includes/Framework/PaymentGateway/Handlers/Capture.php:156
+msgid "Order cannot be captured"
+msgstr "Order cannot be captured"
+
+#. translators: Placeholders: %s - error code when order creation fails
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Orders.php:81
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Orders.php:89
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Orders.php:103
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Orders.php:113
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Orders.php:131
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Orders.php:181
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Orders.php:191
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Orders.php:194
+msgid "Error %d: Unable to create order. Please try again."
+msgstr "Error %d: Unable to create order. Please try again."
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Frontend.php:302
+msgid "or"
+msgstr "or"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Frontend.php:296
+msgid "Pay with"
+msgstr "Pay with"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Frontend.php:193
+msgid "Product does not exist."
+msgstr "Product does not exist."
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Frontend.php:162
+msgid "Buy with"
+msgstr "Buy with"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Ajax.php:125
+msgid "Could not validate merchant. %s"
+msgstr "Could not validate merchant. %s"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:378
+msgid "Checkout"
+msgstr "Checkout"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:377
+msgid "Cart"
+msgstr "Cart"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:376
+msgid "Single products"
+msgstr "Single products"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:337
+msgid "Apple Pay is disabled."
+msgstr "Apple Pay is disabled."
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:330
+msgid "Your %1$sMerchant Identity Certificate%2$s cannot be found. Please check your path configuration."
+msgstr "Your %1$sMerchant Identity Certificate%2$s cannot be found. Please check your path configuration."
+
+#. translators: Placeholders: %1$s - plugin name, %2$s - a
+#. currency/comma-separated list of currencies, %3$s - <a> tag, %4$s - </a> tag
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:311
+msgid "Accepts payment in %1$s only. %2$sConfigure%3$s WooCommerce to accept %1$s to enable Apple Pay."
+msgid_plural "Accepts payment in one of %1$s only. %2$sConfigure%3$s WooCommerce to accept one of %1$s to enable Apple Pay."
+msgstr[0] "Accepts payment in %1$s only. %2$sConfigure%3$s WooCommerce to accept %1$s to enable Apple Pay."
+msgstr[1] "Accepts payment in one of %1$s only. %2$sConfigure%3$s WooCommerce to accept one of %1$s to enable Apple Pay."
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:301
+msgid "Your site must be served over HTTPS with a valid SSL certificate."
+msgstr "Your site must be served over HTTPS with a valid SSL certificate."
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:192
+msgid "Enable to test Apple Pay functionality throughout your sites without processing real payments."
+msgstr "Enable to test Apple Pay functionality throughout your sites without processing real payments."
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:191
+msgid "Test Mode"
+msgstr "Test Mode"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:173
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:183
+msgid "Processing Gateway"
+msgstr "Processing Gateway"
+
+#. translators: Placeholders: %s - the server's web root path
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:160
+msgid "For reference, your current web root path is: %s"
+msgstr "For reference, your current web root path is: %s"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:157
+msgid "The full system path to your certificate file from Apple. For security reasons you should store this outside of your web root."
+msgstr "The full system path to your certificate file from Apple. For security reasons you should store this outside of your web root."
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:155
+msgid "Certificate Path"
+msgstr "Certificate Path"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:148
+msgid "This is found in your %1$sApple developer account%2$s"
+msgstr "This is found in your %1$sApple developer account%2$s"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:144
+msgid "Apple Merchant ID"
+msgstr "Apple Merchant ID"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:138
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1324
+msgid "Connection Settings"
+msgstr "Connection Settings"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:126
+msgid "White with outline"
+msgstr "White with outline"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:125
+msgid "White"
+msgstr "White"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:124
+msgid "Black"
+msgstr "Black"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:121
+msgid "Button Style"
+msgstr "Button Style"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:111
+msgid "Allow Apple Pay on"
+msgstr "Allow Apple Pay on"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:104
+msgid "Accept Apple Pay"
+msgstr "Accept Apple Pay"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:79
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:97
+msgid "Apple Pay"
+msgstr "Apple Pay"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:578
+msgid "Taxes"
+msgstr "Taxes"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:538
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:350
+msgid "Cart data is missing."
+msgstr "Cart data is missing."
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:341
+msgid "Payment request data is missing."
+msgstr "Payment request data is missing."
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:306
+msgid "Apple Pay cannot be used for multiple shipments."
+msgstr "Apple Pay cannot be used for multiple shipments."
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:300
+msgid "Cart contains pre-orders."
+msgstr "Cart contains pre-orders."
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:296
+msgid "Cart contains subscriptions."
+msgstr "Cart contains subscriptions."
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:250
+msgid "Product is not available for purchase."
+msgstr "Product is not available for purchase."
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:245
+msgid "Buy Now is only available for simple products"
+msgstr "Buy Now is only available for simple products"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:240
+msgid "Not available for pre-order products that are set to charge upon release."
+msgstr "Not available for pre-order products that are set to charge upon release."
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:235
+msgid "Not available for subscription products."
+msgstr "Not available for subscription products."
+
+#. translators: Placeholders: %s - the error message
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:154
+msgid "Apple Pay payment failed. %s"
+msgstr "Apple Pay payment failed. %s"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:136
+msgid "Gateway processing error."
+msgstr "Gateway processing error."
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:120
+msgid "Apple Pay payment authorized."
+msgstr "Apple Pay payment authorised."
+
+#. translators: Placeholders: %s - payment response as string
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:112
+msgid ""
+"Payment Response:\n"
+" %s"
+msgstr ""
+"Payment Response:\n"
+" %s"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:108
+msgid "Invalid payment response data"
+msgstr "Invalid payment response data"
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:90
+#: includes/Gateway/API/Response_Message_Helper.php:133
+msgid "The provided address does not match the billing address for cardholder. Please verify the address and try again."
+msgstr "The provided address does not match the billing address for cardholder. Please verify the address and try again."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:89
+#: includes/Gateway/API/Response_Message_Helper.php:132
+msgid "The card verification number does not match. Please re-enter and try again."
+msgstr "The card verification number does not match. Please re-enter and try again."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:88
+#: includes/Gateway/API/Response_Message_Helper.php:131
+msgid "The credit limit for the card has been reached, please use an alternate card or other form of payment."
+msgstr "The credit limit for the card has been reached, please use an alternate card or other form of payment."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:87
+#: includes/Gateway/API/Response_Message_Helper.php:130
+msgid "The card is inactivate or not authorized for card-not-present transactions, please use an alternate card or other form of payment."
+msgstr "The card is inactivate or not authorised for card-not-present transactions, please use an alternate card or other form of payment."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:86
+msgid "Insufficient funds in account, please use an alternate card or other form of payment."
+msgstr "Insufficient funds in account, please use an alternate card or other form of payment."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:85
+#: includes/Gateway/API/Response_Message_Helper.php:129
+msgid "The provided card was declined, please use an alternate card or other form of payment."
+msgstr "The provided card was declined, please use an alternate card or other form of payment."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:84
+msgid "The provided card is expired, please use an alternate card or other form of payment."
+msgstr "The provided card is expired, please use an alternate card or other form of payment."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:81
+#: includes/Gateway/API/Response_Message_Helper.php:128
+msgid "The bank account number is invalid, please re-enter and try again."
+msgstr "The bank account number is invalid, please re-enter and try again."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:80
+#: includes/Gateway/API/Response_Message_Helper.php:127
+msgid "The bank routing number is invalid, please re-enter and try again."
+msgstr "The bank routing number is invalid, please re-enter and try again."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:77
+#: includes/Gateway/API/Response_Message_Helper.php:126
+msgid "Please enter your card expiration date and try again."
+msgstr "Please enter your card expiration date and try again."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:76
+#: includes/Gateway/API/Response_Message_Helper.php:125
+msgid "The card expiration year is invalid, please re-enter and try again."
+msgstr "The card expiration year is invalid, please re-enter and try again."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:75
+msgid "The card expiration month is invalid, please re-enter and try again."
+msgstr "The card expiration month is invalid, please re-enter and try again."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:74
+#: includes/Gateway/API/Response_Message_Helper.php:124
+msgid "The card expiration date is invalid, please re-enter and try again."
+msgstr "The card expiration date is invalid, please re-enter and try again."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:71
+msgid "Please enter your card number and try again."
+msgstr "Please enter your card number and try again."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:70
+msgid "The card number is invalid, please re-enter and try again."
+msgstr "The card number is invalid, please re-enter and try again."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:66
+#: includes/Gateway/API/Response_Message_Helper.php:122
+msgid "Please select the card type and try again."
+msgstr "Please select the card type and try again."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:65
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:69
+msgid "The card type is invalid or does not correlate with the credit card number.  Please try again or use an alternate card or other form of payment."
+msgstr "The card type is invalid or does not correlate with the credit card number.  Please try again or use an alternate card or other form of payment."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:64
+#: includes/Gateway/API/Response_Message_Helper.php:120
+msgid "That card type is not accepted, please use an alternate card or other form of payment."
+msgstr "That card type is not accepted, please use an alternate card or other form of payment."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:61
+#: includes/Gateway/API/Response_Message_Helper.php:119
+msgid "Please enter your card verification number and try again."
+msgstr "Please enter your card verification number and try again."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:60
+#: includes/Gateway/API/Response_Message_Helper.php:118
+msgid "The card verification number is invalid, please try again."
+msgstr "The card verification number is invalid, please try again."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:59
+msgid "This order is being placed on hold for review due to an incorrect card verification number.  You may contact the store to complete the transaction."
+msgstr "This order is being placed on hold for review due to an incorrect card verification number.  You may contact the store to complete the transaction."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:54
+#: includes/Gateway/API/Response_Message_Helper.php:116
+msgid "This order is being placed on hold for review. Please contact us to complete the transaction."
+msgstr "This order is being placed on hold for review. Please contact us to complete the transaction."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:53
+#: includes/Gateway/API/Response_Message_Helper.php:115
+msgid "We cannot process your order with the payment information that you provided. Please use a different payment account or an alternate payment method."
+msgstr "We cannot process your order with the payment information that you provided. Please use a different payment account or an alternate payment method."
+
+#: includes/Framework/PaymentGateway/Api/Payment_Gateway_Api_Response_Message_Helper.php:52
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Frontend.php:125
+msgid "An error occurred, please try again or try an alternate form of payment"
+msgstr "An error occurred, please try again or try an alternate form of payment"
+
+#: includes/Framework/PaymentGateway/Admin/views/html-user-profile-field-customer-id.php:26
+msgid "The gateway customer ID for the user. Only edit this if necessary."
+msgstr "The gateway customer ID for the user. Only edit this if necessary."
+
+#: includes/Framework/PaymentGateway/Admin/views/html-user-payment-token-editor.php:58
+msgid "No saved payment tokens"
+msgstr "No saved payment tokens"
+
+#: includes/Framework/PaymentGateway/Admin/views/html-user-payment-token-editor-token.php:69
+msgid "-- Select an option --"
+msgstr "-- Select an option --"
+
+#. Translators: %s is the amount to be captured.
+#: includes/Framework/PaymentGateway/Admin/views/html-order-partial-capture.php:61
+msgid "Capture %s"
+msgstr "Capture %s"
+
+#: includes/Framework/PaymentGateway/Admin/views/html-order-partial-capture.php:49
+msgid "Comment (optional):"
+msgstr "Comment (optional):"
+
+#: includes/Framework/PaymentGateway/Admin/views/html-order-partial-capture.php:42
+msgid "Capture amount"
+msgstr "Capture amount"
+
+#: includes/Framework/PaymentGateway/Admin/views/html-order-partial-capture.php:36
+msgid "Remaining order total"
+msgstr "Remaining order total"
+
+#: includes/Framework/PaymentGateway/Admin/views/html-order-partial-capture.php:30
+msgid "Amount already captured"
+msgstr "Amount already captured"
+
+#: includes/Framework/PaymentGateway/Admin/views/html-order-partial-capture.php:26
+msgid "Authorization total"
+msgstr "Authorisation total"
+
+#: includes/Framework/PaymentGateway/Admin/views/html-admin-gateway-status.php:77
+msgid "Display at Checkout"
+msgstr "Display at Checkout"
+
+#: includes/Framework/PaymentGateway/Admin/views/html-admin-gateway-status.php:75
+msgid "Display at Checkout & Log"
+msgstr "Display at Checkout & Log"
+
+#: includes/Framework/PaymentGateway/Admin/views/html-admin-gateway-status.php:72
+msgid "Displays whether or not debug logging is enabled for this gateway."
+msgstr "Displays whether or not debug logging is enabled for this gateway."
+
+#: includes/Framework/PaymentGateway/Admin/views/html-admin-gateway-status.php:58
+msgid "Displays whether or not tokenization is enabled for this gateway."
+msgstr "Displays whether or not tokenisation is enabled for this gateway."
+
+#: includes/Framework/PaymentGateway/Admin/views/html-admin-gateway-status.php:57
+msgid "Tokenization Enabled"
+msgstr "Tokenisation Enabled"
+
+#: includes/Framework/PaymentGateway/Admin/views/html-admin-gateway-status.php:50
+msgid "The transaction environment for this gateway."
+msgstr "The transaction environment for this gateway."
+
+#. translators: environment as in a software environment (test/production)
+#: includes/Framework/PaymentGateway/Admin/views/html-admin-gateway-status.php:49
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1273
+msgid "Environment"
+msgstr "Environment"
+
+#: includes/Framework/PaymentGateway/Admin/views/html-admin-gateway-status.php:28
+msgid "This section contains configuration settings for this gateway."
+msgstr "This section contains configuration settings for this gateway."
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_User_Handler.php:296
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Subscriptions.php:679
+msgid "Customer ID"
+msgstr "Customer ID"
+
+#. translators: Placeholder %s - Plugin name
+#. translators: Placeholder %s - Payment token
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_User_Handler.php:218
+#: includes/Framework/PaymentGateway/Payment_Gateway_Privacy.php:56
+#: includes/Framework/PaymentGateway/Payment_Gateway_Privacy.php:59
+#: includes/Framework/PaymentGateway/Payment_Gateway_Privacy.php:211
+msgid "%s Payment Tokens"
+msgstr "%s Payment Tokens"
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Payment_Token_Editor.php:686
+msgid "Remove"
+msgstr "Remove"
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Payment_Token_Editor.php:663
+msgid "Save"
+msgstr "Save"
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Payment_Token_Editor.php:660
+msgid "Add New"
+msgstr "Add New"
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Payment_Token_Editor.php:658
+msgid "Refresh"
+msgstr "Refresh"
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Payment_Token_Editor.php:550
+#: includes/Framework/PaymentGateway/Payment_Gateway_Privacy.php:193
+#: includes/Framework/PaymentGateway/Payment_Gateway_Privacy.php:301
+msgid "Last Four"
+msgstr "Last Four"
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Payment_Token_Editor.php:545
+#: includes/Framework/PaymentGateway/Payment_Gateway_Privacy.php:303
+msgid "Card Type"
+msgstr "Card Type"
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Payment_Token_Editor.php:540
+msgid "Token ID"
+msgstr "Token ID"
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Payment_Token_Editor.php:505
+msgid "Default"
+msgstr "Default"
+
+#. translators: environment name in brackets
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Payment_Token_Editor.php:475
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_User_Handler.php:299
+msgid "(%s)"
+msgstr "(%s)"
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Payment_Token_Editor.php:115
+msgid "An error occurred. Please try again."
+msgstr "An error occurred. Please try again."
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Payment_Token_Editor.php:111
+msgid "Invalid token data"
+msgstr "Invalid token data"
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Payment_Token_Editor.php:98
+msgid "Are you sure you want to remove this token?"
+msgstr "Are you sure you want to remove this token?"
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Order.php:290
+msgid "This charge cannot be captured."
+msgstr "This charge cannot be captured."
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Order.php:288
+msgid "This charge can no longer be captured."
+msgstr "This charge can no longer be captured."
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Order.php:286
+msgid "This charge has been fully captured."
+msgstr "This charge has been fully captured."
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Order.php:123
+msgid "Something went wrong, and the capture could no be completed. Please try again."
+msgstr "Something went wrong, and the capture could no be completed. Please try again."
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Order.php:120
+msgid "Are you sure you wish to process this capture? The action cannot be undone."
+msgstr "Are you sure you wish to process this capture? The action cannot be undone."
+
+#: includes/Framework/Lifecycle.php:327
+msgid "Hot dog"
+msgstr "Hot dog"
+
+#: includes/Framework/Lifecycle.php:325
+msgid "Cowabunga"
+msgstr "Cowabunga"
+
+#. translators: 1: product name
+#: includes/Gateway/Digital_Wallet.php:416
+msgid "You cannot purchase \"%1$s\" because it is currently not available."
+msgstr "You cannot purchase \"%1$s\" because it is currently not available."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Payment_Form.php:326
+msgid "CSC"
+msgstr "CSC"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Payment_Form.php:323
+msgid "Card Security Code"
+msgstr "Card Security Code"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Payment_Form.php:302
+msgid "Expiration (MM/YY)"
+msgstr "Expiration (MM/YY)"
+
+#. translators: %1$s - opening bold HTML tag, %2$s - closing bold HTML tag,
+#. %3$s - version number
+#: includes/Gateway/Blocks_Handler.php:237
+msgid "%1$sWarning!%2$s Some Square + Checkout Block features do not work with your version of WooCommerce Blocks (%3$s). Please update to the latest version of WooCommerce Blocks or WooCommerce to fix these issues."
+msgstr "%1$sWarning!%2$s Some Square + Checkout Block features do not work with your version of WooCommerce Blocks (%3$s). Please update to the latest version of WooCommerce Blocks or WooCommerce to fix these issues."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1112
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2092
+#: includes/Gateway/Blocks_Handler.php:148
+msgid "Credit Card"
+msgstr "Credit Card"
+
+#. translators: Context (product, cart, checkout or page)
+#: includes/Gateway/Digital_Wallet.php:626
+msgid "Empty payment request data for %s."
+msgstr "Empty payment request data for %s."
+
+#: includes/Gateway/Digital_Wallet.php:1098
+msgid "Unable to verify domain with Apple Pay - missing access token."
+msgstr "Unable to verify domain with Apple Pay - missing access token."
+
+#: includes/Gateway.php:939
+msgid "Select any digital wallet buttons you don't want to be displayed on your store."
+msgstr "Select any digital wallet buttons you don't want to be displayed on your store."
+
+#: includes/Gateway.php:938
+msgid "Hide Digital Wallet Buttons"
+msgstr "Hide Digital Wallet Buttons"
+
+#: includes/Gateway.php:927
+msgid "Select the color of the Google Pay button."
+msgstr "Select the color of the Google Pay button."
+
+#: includes/Gateway.php:926
+msgid "Google Pay Button Color"
+msgstr "Google Pay Button Color"
+
+#: includes/Gateway.php:914
+msgid "Select the color of the Apple Pay button."
+msgstr "Select the color of the Apple Pay button."
+
+#: includes/Gateway.php:913
+msgid "Apple Pay Button Color"
+msgstr "Apple Pay Button Color"
+
+#: includes/Gateway.php:901
+msgid "Select which text is displayed on the digital wallet buttons."
+msgstr "Select which text is displayed on the digital wallet buttons."
+
+#: includes/Gateway.php:900
+msgid "This setting only applies to the Apple Pay button. When Google Pay is available, the Google Pay button will always have the \"Buy with\" button text."
+msgstr "This setting only applies to the Apple Pay button. When Google Pay is available, the Google Pay button will always have the \"Buy with\" button text."
+
+#: includes/Gateway.php:899
+msgid "Button Type"
+msgstr "Button Type"
+
+#: includes/Gateway.php:895
+msgid "Enable digital wallets"
+msgstr "Enable digital wallets"
+
+#. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
+#: includes/Gateway.php:892
+msgid "Allow customers to pay with Apple Pay or Google Pay from your Product, Cart and Checkout pages. Read more about the availablity of digital wallets in our %1$sdocumentation%2$s."
+msgstr "Allow customers to pay with Apple Pay or Google Pay from your Product, Cart and Checkout pages. Read more about the availablity of digital wallets in our %1$sdocumentation%2$s."
+
+#: includes/Gateway.php:885
+msgid "Take payments on your store with Apple Pay and Google Pay."
+msgstr "Take payments on your store with Apple Pay and Google Pay."
+
+#: includes/Gateway.php:884
+msgid "Digital Wallet Settings"
+msgstr "Digital Wallet Settings"
+
+#: includes/Gateway.php:825
+msgid "Check to enable tokenization and allow customers to securely save their payment details for future checkout."
+msgstr "Check to enable tokenisation and allow customers to securely save their payment details for future checkout."
+
+#. translators: show debugging information on both checkout page and in the log
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1213
+#: includes/Gateway.php:788
+msgid "Both"
+msgstr "Both"
+
+#: includes/Framework/PaymentGateway/Admin/views/html-admin-gateway-status.php:79
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1211
+#: includes/Gateway.php:786
+msgid "Save to Log"
+msgstr "Save to Log"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1210
+#: includes/Gateway.php:785
+msgid "Show on Checkout Page"
+msgstr "Show on Checkout Page"
+
+#: includes/Framework/PaymentGateway/Admin/views/html-admin-gateway-status.php:81
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1209
+#: includes/Gateway.php:784
+msgid "Off"
+msgstr "Off"
+
+#. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1206
+#: includes/Gateway.php:781
+msgid "Show Detailed Error Messages and API requests/responses on the checkout page and/or save them to the %1$sdebug log%2$s"
+msgstr "Show Detailed Error Messages and API requests/responses on the checkout page and/or save them to the %1$sdebug log%2$s"
+
+#: includes/Framework/PaymentGateway/Admin/views/html-admin-gateway-status.php:71
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1203
+#: includes/Gateway.php:778
+msgid "Debug Mode"
+msgstr "Debug Mode"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1196
+#: includes/Gateway.php:771
+msgid "Check to enable detailed decline messages to the customer during checkout when possible, rather than a generic decline message."
+msgstr "Check to enable detailed decline messages to the customer during checkout when possible, rather than a generic decline message."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1194
+#: includes/Gateway.php:769
+msgid "Detailed Decline Messages"
+msgstr "Detailed Decline Messages"
+
+#: includes/Gateway.php:762
+msgid "Advanced Settings"
+msgstr "Advanced Settings"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1165
+#: includes/Gateway.php:733
+msgid "Payment method description that the customer will see during checkout."
+msgstr "Payment method description that the customer will see during checkout."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1158
+#: includes/Gateway.php:726
+msgid "Payment method title that the customer will see during checkout."
+msgstr "Payment method title that the customer will see during checkout."
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1150
+#: includes/Gateway.php:718
+msgid "Enable this gateway"
+msgstr "Enable this gateway"
+
+#: includes/Gateway/Digital_Wallet.php:962
+msgid "Empty cart"
+msgstr "Empty cart"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:568
+#: includes/Gateway/Digital_Wallet.php:587
+msgid "Fees"
+msgstr "Fees"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:558
+#: includes/Gateway/Digital_Wallet.php:563
+msgid "Shipping"
+msgstr "Shipping"
+
+#: includes/Gateway/Digital_Wallet.php:507
+msgid "Pending"
+msgstr "Pending"
+
+#: includes/Gateway/Digital_Wallet.php:496
+msgid "This payment method cannot be used for multiple shipments."
+msgstr "This payment method cannot be used for multiple shipments."
+
+#: includes/Gateway/Digital_Wallet.php:438
+#: includes/Gateway/Digital_Wallet.php:571
+msgid "Tax"
+msgstr "Tax"
+
+#. translators: 1: product name 2: quantity in stock
+#: includes/Gateway/Digital_Wallet.php:411
+msgid "You cannot add that amount of \"%1$s\"; to the cart because there is not enough stock (%2$s remaining)."
+msgstr "You cannot add that amount of \"%1$s\"; to the cart because there is not enough stock (%2$s remaining)."
+
+#. translators: product ID
+#: includes/Gateway/Digital_Wallet.php:395
+msgid "Product with the ID (%d) cannot be found."
+msgstr "Product with the ID (%d) cannot be found."
+
+#: includes/Gateway/Digital_Wallet.php:289
+msgid "OR"
+msgstr "OR"
+
+#. Translators: %1$s: opening bold tags, %2$s: closing strong/bold tags, %3$s:
+#. expected location of apple pay verification file, %4$s: opening href tag
+#. with link to Square documentation, %5$s: closing href tag
+#: includes/Gateway/Digital_Wallet.php:185
+msgid "Apple Pay is not available with Square - there was a problem with registering your store domain with Square/Apple Pay. %1$sView the Square logs%2$s to find out what caused the registration to fail."
+msgstr "Apple Pay is not available with Square - there was a problem with registering your store domain with Square/Apple Pay. %1$sView the Square logs%2$s to find out what caused the registration to fail."
+
+#. Translators: %1$s: expected location of apple pay verification file, %2$s:
+#. opening href tag with link to Square documentation, %3$s: closing href tag
+#: includes/Gateway/Digital_Wallet.php:169
+msgid "Apple Pay is not available with Square. We cannot confirm the Apple Pay domain verification file is at the expected location: %1$s. For more information, please read our documentation on %2$sSetting up Apple Pay%3$s."
+msgstr "Apple Pay is not available with Square. We cannot confirm the Apple Pay domain verification file is at the expected location: %1$s. For more information, please read our documentation on %2$sSetting up Apple Pay%3$s."
+
+#: includes/Sync/Product_Import.php:659
+msgid "Variations with missing SKUs cannot be imported."
+msgstr "Variations with missing SKUs cannot be imported."
+
+#: includes/Sync/Interval_Polling.php:112
+msgid "Product category data could not be updated from Square. Invalid API response."
+msgstr "Product category data could not be updated from Square. Invalid API response."
+
+#. translators: Placeholders: %1$s - Square item name, %2$s - Failure reason
+#: includes/Sync/Product_Import.php:1373
+msgid "Could not update %1$s from Square. %2$s"
+msgstr "Could not update %1$s from Square. %2$s"
+
+#: includes/Admin/Settings_Page.php:183
+msgid "Update existing products during import."
+msgstr "Update existing products during import."
+
+#. translators: Placeholders: %1$s - <a> tag linking to WooCommerce Square
+#. docs, %2%s - closing </a> tag
+#: includes/Admin/Settings_Page.php:182
+msgid "Doing so will update existing WooCommerce products with the latest information from Square. %1$sView Documentation%2$s."
+msgstr "Doing so will update existing WooCommerce products with the latest information from Square. %1$sView Documentation%2$s."
+
+#: includes/Admin/Settings_Page.php:180
+msgid "Do you wish to import existing product updates from Square?"
+msgstr "Do you wish to import existing product updates from Square?"
+
+#: includes/Admin/Settings_Page.php:178
+msgid "You are about to import all new products, variations and categories from Square. This will create a new product in WooCommerce for every product retrieved from Square. If you have products in the trash from the previous imports, these will be ignored in the import."
+msgstr "You are about to import all new products, variations and categories from Square. This will create a new product in WooCommerce for every product retrieved from Square. If you have products in the trash from the previous imports, these will be ignored in the import."
+
+#. translators: Placeholders: %1$s - plugin name, %2$s - <a> tag, %3$s - </a>
+#. tag, %4$s - <a> tag, %5$s - </a> tag
+#: includes/Framework/Lifecycle.php:334 includes/Lifecycle.php:243
+msgid "Are you having a great experience with %1$s so far? Please consider %2$sleaving a review%3$s! If things aren't going quite as expected, we're happy to help -- please %4$sreach out to our support team%5$s."
+msgstr "Are you having a great experience with %1$s so far? Please consider %2$sleaving a review%3$s! If things aren't going quite as expected, we're happy to help -- please %4$sreach out to our support team%5$s."
+
+#: includes/Framework/Lifecycle.php:324 includes/Lifecycle.php:236
+msgid "Fantastic"
+msgstr "Fantastic"
+
+#: includes/Lifecycle.php:235
+msgid "Great"
+msgstr "Great"
+
+#: includes/Framework/Lifecycle.php:326 includes/Lifecycle.php:234
+msgid "Congratulations"
+msgstr "Congratulations"
+
+#: includes/Framework/Lifecycle.php:323 includes/Lifecycle.php:233
+msgid "Awesome"
+msgstr "Awesome"
+
+#: includes/Admin.php:197
+msgid "Updated"
+msgstr "Updated"
+
+#: includes/AJAX.php:309
+msgid "Stock must be fetched from Square before editing stock quantity"
+msgstr "Stock must be fetched from Square before editing stock quantity"
+
+#: includes/Admin/Sync_Page.php:162
+msgid "Please set the business location to enable product sync."
+msgstr "Please set the business location to enable product sync."
+
+#: includes/Settings.php:214
+msgid "After enabling you’ll see a new Sandbox settings section with two fields; Sandbox Application ID & Sandbox Access Token."
+msgstr "After enabling you’ll see a new Sandbox settings section with two fields; Sandbox Application ID & Sandbox Access Token."
+
+#: includes/Settings.php:212
+msgid "Enable to set the plugin in sandbox mode."
+msgstr "Enable to set the plugin in sandbox mode."
+
+#: includes/Settings.php:211
+msgid "Enable Sandbox Mode"
+msgstr "Enable Sandbox Mode"
+
+#: includes/Emails/Access_Token_Email.php:118
+msgid "In order to continue accepting payments, please disconnect and re-connect your site at "
+msgstr "In order to continue accepting payments, please disconnect and re-connect your site at "
+
+#. translators: Placeholders: %1$s - opening <a> HTML link tag, %2$s - closing
+#. </a> HTML link tag
+#: includes/Emails/Access_Token_Email.php:104
+msgid "In order to continue accepting payments, please %1$sdisconnect and re-connect your site%2$s."
+msgstr "In order to continue accepting payments, please %1$sdisconnect and re-connect your site%2$s."
+
+#: includes/Emails/Access_Token_Email.php:54
+msgctxt "Square connection problems email body."
+msgid "Heads up! There may be a problem with your connection to Square."
+msgstr "Heads up! There may be a problem with your connection to Square."
+
+#: includes/Emails/Access_Token_Email.php:53
+msgctxt "Email heading"
+msgid "There was a problem with your Square Access Token"
+msgstr "There was a problem with your Square Access Token"
+
+#: includes/Emails/Access_Token_Email.php:52
+msgctxt "Email subject"
+msgid "[WooCommerce] There was a problem with your Square Access Token"
+msgstr "[WooCommerce] There was a problem with your Square Access Token"
+
+#: includes/Emails/Access_Token_Email.php:51
+msgid "This email is sent when problems with Access Token are encountered"
+msgstr "This email is sent when problems with Access Token are encountered"
+
+#: includes/Emails/Access_Token_Email.php:50
+msgid "Square Access Token problems"
+msgstr "Square Access Token problems"
+
+#: includes/Handlers/Products.php:321
+msgid "This product"
+msgstr "This product"
+
+#. translators: Placeholder: %s - product name
+#: includes/Handlers/Products.php:75
+msgid "Please add an SKU to every variation of %s for syncing with Square. Each SKU must be unique and match the corresponding item's SKU in your Square account."
+msgstr "Please add an SKU to every variation of %s for syncing with Square. Each SKU must be unique and match the corresponding item's SKU in your Square account."
+
+#. translators: Placeholder: %s - product name
+#: includes/Handlers/Products.php:73
+msgid "Please add an SKU to sync %s with Square. The SKU must match the item's SKU in your Square account."
+msgstr "Please add an SKU to sync %s with Square. The SKU must match the item's SKU in your Square account."
+
+#. translators: Placeholder: %s category ID
+#: includes/Handlers/Product.php:258
+msgid "Square category with id (%s) was not imported to your Store. Please run Import Products from Square settings."
+msgstr "Square category with id (%s) was not imported to your Store. Please run Import Products from Square settings."
+
+#. translators: Placeholder %d number of categories.
+#: includes/Sync/Interval_Polling.php:102
+msgid "Updated data for %d category."
+msgid_plural "Updated data for %d categories."
+msgstr[0] "Updated data for %d category."
+msgstr[1] "Updated data for %d categories."
+
+#: includes/Settings.php:342
+msgid "Run an import to create new products in this WooCommerce store for each new product created in Square that has a unique SKU not existing in here. Needs to be run each time new items are created in Square."
+msgstr "Run an import to create new products in this WooCommerce store for each new product created in Square that has a unique SKU not existing in here. Needs to be run each time new items are created in Square."
+
+#: includes/Settings.php:239
+msgid "Access Token for the Sandbox Test Account, see the details in the Sandbox Test Account section. Make sure you use the correct Sandbox Access Token for your application. For a given Sandbox Test Account, each Authorized Application is assigned a different Access Token."
+msgstr "Access Token for the Sandbox Test Account, see the details in the Sandbox Test Account section. Make sure you use the correct Sandbox Access Token for your application. For a given Sandbox Test Account, each Authorised Application is assigned a different Access Token."
+
+#: includes/Settings.php:237
+msgid "Sandbox Access Token"
+msgstr "Sandbox Access Token"
+
+#: includes/Settings.php:232
+msgid "Application ID for the Sandbox Application, see the details in the My Applications section."
+msgstr "Application ID for the Sandbox Application, see the details in the My Applications section."
+
+#: includes/Settings.php:230
+msgid "Sandbox Application ID"
+msgstr "Sandbox Application ID"
+
+#. translators: Placeholders: %1$s - URL.
+#: includes/Settings.php:223
+msgid "Sandbox details can be created at: %s"
+msgstr "Sandbox details can be created at: %s"
+
+#: includes/Settings.php:219
+msgid "Sandbox settings"
+msgstr "Sandbox settings"
+
+#. translators: Placeholders: %1$s - <strong> tag, %2$s - </strong> tag, %3$s -
+#. <a> tag, %4$s - </a> tag
+#: includes/Plugin.php:509
+msgid "%1$sWooCommerce Square:%2$s Automatic refreshing of the connection to Square is inactive. Please disconnect and reconnect to resolve."
+msgstr "%1$sWooCommerce Square:%2$s Automatic refreshing of the connection to Square is inactive. Please disconnect and reconnect to resolve."
+
+#: includes/Sync/Product_Import.php:655
+msgid "Items with variable pricing cannot be imported."
+msgstr "Items with variable pricing cannot be imported."
+
+#. translators: Placeholders: %1$s - Square item name, %2$s - Square item
+#. variation name, %3$s - failure reason
+#: includes/Sync/Product_Import.php:582
+msgid "Could not import \"%1$s - %2$s\" from Square. %3$s"
+msgstr "Could not import \"%1$s - %2$s\" from Square. %3$s"
+
+#. translators: Placeholders: %1$s - Square item name, %2$s - failure reason
+#: includes/Sync/Product_Import.php:627
+msgid "Could not import \"%1$s\" from Square. %2$s"
+msgstr "Could not import \"%1$s\" from Square. %2$s"
+
+#. translators: Placeholders: %1$s - Square item name, %2$s - Failure reason
+#: includes/Sync/Product_Import.php:1376
+msgid "Could not import %1$s from Square. %2$s"
+msgstr "Could not import %1$s from Square. %2$s"
+
+#: includes/Handlers/Connection.php:116
+msgid "Square Error: We could not connect to Square. No access token was given.!"
+msgstr "Square Error: We could not connect to Square. No access token was given.!"
+
+#: includes/Gateway/API/Requests/Orders.php:458
+#: includes/Gateway/API/Requests/Orders.php:497
+msgid "Adjustment"
+msgstr "Adjustment"
+
+#: includes/Settings.php:285
+msgid "Enable to sync product inventory with Square"
+msgstr "Enable to sync product inventory with Square"
+
+#. translators: Placeholders: %1$s - <strong> tag, %2$s - </strong> tag, %3$s -
+#. <a> tag, %4$s - </a> tag
+#: includes/Settings.php:251
+msgid "Select a location to link to this site. Only %1$sactive%2$s %3$slocations%4$s that support credit card processing in Square can be linked."
+msgstr "Select a location to link to this site. Only %1$sactive%2$s %3$slocations%4$s that support credit card processing in Square can be linked."
+
+#. translators: Placeholders: %1$s - <strong> tag, %2$s - </strong> tag
+#: includes/Admin.php:207
+msgid "Inventory is %1$salways fetched from Square%2$s periodically to account for sales from other channels."
+msgstr "Inventory is %1$salways fetched from Square%2$s periodically to account for sales from other channels."
+
+#: includes/Admin.php:204 includes/Settings.php:287
+msgid "Inventory is fetched from Square periodically and updated in WooCommerce"
+msgstr "Inventory is fetched from Square periodically and updated in WooCommerce"
+
+#: includes/Admin.php:201
+msgid "Enable to push inventory changes to Square"
+msgstr "Enable to push inventory changes to Square"
+
+#: includes/Admin.php:200
+msgid "Enable to fetch inventory changes from Square"
+msgstr "Enable to fetch inventory changes from Square"
+
+#: includes/Settings.php:455
+msgid "Import all products from Square"
+msgstr "Import all products from Square"
+
+#: includes/Settings.php:417
+msgid "Please choose a location"
+msgstr "Please choose a location"
+
+#. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
+#: includes/Settings.php:369
+msgid "Log debug messages to the %1$sWooCommerce status log%2$s"
+msgstr "Log debug messages to the %1$sWooCommerce status log%2$s"
+
+#: includes/Settings.php:352
+msgid "Connection"
+msgstr "Connection"
+
+#: includes/Settings.php:301
+msgid "Products not found in Square will be hidden in the WooCommerce product catalog."
+msgstr "Products not found in Square will be hidden in the WooCommerce product catalog."
+
+#: includes/Settings.php:299
+msgid "Hide synced products when not found in Square"
+msgstr "Hide synced products when not found in Square"
+
+#: includes/Settings.php:298
+msgid "Handle missing products"
+msgstr "Handle missing products"
+
+#: includes/Settings.php:276
+msgid "Do not sync product data"
+msgstr "Do not sync product data"
+
+#. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
+#: includes/Settings.php:193
+msgid "Sync your products and inventory and also accept credit and debit card payments at checkout. %1$sClick here%2$s to configure payments."
+msgstr "Sync your products and inventory and also accept credit and debit card payments at checkout. %1$sClick here%2$s to configure payments."
+
+#: includes/Gateway.php:824
+msgid "Customer Profiles"
+msgstr "Customer Profiles"
+
+#: includes/Gateway.php:575
+msgid "Could not find original transaction tender. Please refund this transaction from your Square dashboard."
+msgstr "Could not find original transaction tender. Please refund this transaction from your Square dashboard."
+
+#. translators: %s maximum refund date.
+#: includes/Gateway.php:551
+msgid "Refunds must be made within %s of the original payment date."
+msgstr "Refunds must be made within %s of the original payment date."
+
+#: includes/Gateway.php:100
+msgid "Allow customers to use Square to securely pay with their credit cards"
+msgstr "Allow customers to use Square to securely pay with their credit cards"
+
+#. translators: Placeholder: %s - sync job ID
+#: includes/AJAX.php:272
+msgid "No sync job in progress found %s"
+msgstr "No sync job in progress found %s"
+
+#. translators: Placeholder: %s - error message
+#: includes/AJAX.php:224
+msgid "An error occurred. %s"
+msgstr "An error occurred. %s"
+
+#: includes/AJAX.php:212
+msgid "Could not unsync product."
+msgstr "Could not unsync product."
+
+#: includes/AJAX.php:200
+msgid "Could not resolve record."
+msgstr "Could not resolve record."
+
+#: includes/AJAX.php:189
+msgid "Could not delete record."
+msgstr "Could not delete record."
+
+#: includes/AJAX.php:181
+msgid "Could not delete records."
+msgstr "Could not delete records."
+
+#: includes/AJAX.php:126
+msgid "Your products are being imported in the background! This may take some time to complete."
+msgstr "Your products are being imported in the background! This may take some time to complete."
+
+#: includes/AJAX.php:123
+msgid "Could not start import. Please try again."
+msgstr "Could not start import. Please try again."
+
+#. translators: Placeholders: %s = help text
+#: includes/AJAX.php:100
+msgid "Error finding item in Square. %s"
+msgstr "Error finding item in Square. %s"
+
+#. translators: Placeholders: %1$s = error message, %2$s = help text
+#: includes/AJAX.php:95
+msgid "Unable to fetch inventory: %1$s. %2$s"
+msgstr "Unable to fetch inventory: %1$s. %2$s"
+
+#: includes/AJAX.php:78
+msgid "Please mark product as un-synced and save, then synced again."
+msgstr "Please mark product as un-synced and save, then synced again."
+
+#. translators: Placeholders: %1$s = store currency, %2$s = configured Square
+#. business location currency, %3$s = <a> tag, %4$s = </a> tag, %5$s = <a> tag,
+#. %6$s = </a> tag
+#: includes/Plugin.php:577
+msgid "Heads up! Your store currency is %1$s but your configured Square business location currency is %2$s, so payments cannot be processed. Please %3$schoose a different business location%4$s or change your %5$sshop currency%6$s."
+msgstr "Heads up! Your store currency is %1$s but your configured Square business location currency is %2$s, so payments cannot be processed. Please %3$schoose a different business location%4$s or change your %5$sshop currency%6$s."
+
+#. translators: Placeholders: %1$s = <strong> tag, %2$s = </strong> tag
+#: includes/Plugin.php:544
+msgid "%1$sWooCommerce Square:%2$s Product prices are entered inclusive of tax, but Square does not support syncing tax-inclusive prices. Please make sure your Square tax rates match your WooCommerce tax rates."
+msgstr "%1$sWooCommerce Square:%2$s Product prices are entered inclusive of tax, but Square does not support syncing tax-inclusive prices. Please make sure your Square tax rates match your WooCommerce tax rates."
+
+#. translators: Placeholders: %1$s - <strong> tag, %2$s - </strong> tag, %3$s -
+#. 2-character country code, %4$s - comma separated list of 2-character country
+#. codes
+#: includes/Plugin.php:466
+msgid "%1$sWooCommerce Square:%2$s Your base country is %3$s, but Square can’t accept transactions from merchants outside of %4$s."
+msgstr "%1$sWooCommerce Square:%2$s Your base country is %3$s, but Square can’t accept transactions from merchants outside of %4$s."
+
+#. translators: Placeholders: %1$s - plugin name, %2$ - plugin version number,
+#. %3$s - opening <a> HTML link tag, %4$s - closing </a> HTML link tag,  %5$s -
+#. opening <a> HTML link tag, %6$s - closing </a> HTML link tag
+#: includes/Plugin.php:426
+msgid "%1$s has been updated to version %2$s. In order to continue syncing product inventory, please make sure to disconnect and reconnect with Square from the %3$splugin settings%4$s and re-sync your products. Read more in the %5$supdated documentation%6$s."
+msgstr "%1$s has been updated to version %2$s. In order to continue syncing product inventory, please make sure to disconnect and reconnect with Square from the %3$splugin settings%4$s and re-sync your products. Read more in the %5$supdated documentation%6$s."
+
+#. translators: Placeholders: %1$s - plugin name
+#: includes/Plugin.php:405
+msgid "Thanks for installing %1$s!"
+msgstr "Thanks for installing %1$s!"
+
+#. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
+#: includes/Plugin.php:397
+msgid "To get started, %1$sconnect with Square &raquo;%2$s"
+msgstr "To get started, %1$sconnect with Square &raquo;%2$s"
+
+#: includes/Plugin.php:391
+msgid "To get started, connect with Square."
+msgstr "To get started, connect with Square."
+
+#. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
+#: includes/Plugin.php:374
+msgid "Heads up! Square is configured to sync product inventory, but WooCommerce stock management is disabled. Please %1$senable stock management%2$s to ensure product inventory counts are kept in sync."
+msgstr "Heads up! Square is configured to sync product inventory, but WooCommerce stock management is disabled. Please %1$senable stock management%2$s to ensure product inventory counts are kept in sync."
+
+#. translators: Placeholders: %1$s - <strong> tag, %2$s - </strong> tag, %3$s -
+#. <a> tag, %4$s - </a> tag
+#: includes/Plugin.php:358
+msgid "%1$sNo products%2$s are marked \"sync with Square\". %3$sUpdate your products to sync data &raquo;%4$s"
+msgstr "%1$sNo products%2$s are marked \"sync with Square\". %3$sUpdate your products to sync data &raquo;%4$s"
+
+#. translators: Placeholders: %1$s - <strong> tag, %2$s - product count, %3$s -
+#. </strong> tag, %4$s - <a> tag, %5$s - </a> tag
+#: includes/Plugin.php:346
+msgid "%1$s%2$d products%3$s are marked \"sync with Square\". %4$sStart a new sync now &raquo;%5$s"
+msgstr "%1$s%2$d products%3$s are marked \"sync with Square\". %4$sStart a new sync now &raquo;%5$s"
+
+#: includes/Plugin.php:340
+msgid "You are ready to sync products!"
+msgstr "You are ready to sync products!"
+
+#. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
+#: includes/Plugin.php:330
+msgid "Visit the %1$splugin settings%2$s to set your business location."
+msgstr "Visit the %1$splugin settings%2$s to set your business location."
+
+#: includes/Plugin.php:324
+msgid "To get started, set your business location."
+msgstr "To get started, set your business location."
+
+#: includes/Plugin.php:317
+msgid "You are connected to Square!"
+msgstr "You are connected to Square!"
+
+#. translators: Placeholders: %1$s - <a> tag, %2$s - </a> tag
+#: includes/Plugin.php:300
+msgid "Heads up! There may be a problem with your connection to Square. In order to continue accepting payments, please %1$sdisconnect and re-connect your site%2$s."
+msgstr "Heads up! There may be a problem with your connection to Square. In order to continue accepting payments, please %1$sdisconnect and re-connect your site%2$s."
+
+#: includes/Utilities/Encryption_Utility.php:146
+msgid "Data must be a non-empty string"
+msgstr "Data must be a non-empty string"
+
+#: includes/Utilities/Encryption_Utility.php:142
+msgid "No decryption method available"
+msgstr "No decryption method available"
+
+#: includes/Utilities/Encryption_Utility.php:119
+msgid "Could not generate encryption vector."
+msgstr "Could not generate encryption vector."
+
+#: includes/Utilities/Encryption_Utility.php:107
+#: includes/Utilities/Encryption_Utility.php:150
+msgid "Encryption key must be a string"
+msgstr "Encryption key must be a string"
+
+#: includes/Utilities/Encryption_Utility.php:103
+msgid "Data must be a non-empty string or array"
+msgstr "Data must be a non-empty string or array"
+
+#: includes/Utilities/Encryption_Utility.php:99
+msgid "No encryption method available"
+msgstr "No encryption method available"
+
+#. translators: %1$s - Cipher method. %2$s - Preferred cipher method.
+#: includes/Utilities/Encryption_Utility.php:74
+msgid "%1$s encryption is not available on this site. %2$s will be used instead."
+msgstr "%1$s encryption is not available on this site. %2$s will be used instead."
+
+#: includes/Utilities/Encryption_Utility.php:56
+msgid "Encryption is not supported on this site."
+msgstr "Encryption is not supported on this site."
+
+#. translators: Placeholder: %s - product ID
+#: includes/Sync/Manual_Synchronization.php:978
+msgid "Product %s could not be updated in Square."
+msgstr "Product %s could not be updated in Square."
+
+#: includes/Sync/Records/Record.php:569
+msgid "Unlink"
+msgstr "Unlink"
+
+#: includes/Sync/Records/Record.php:560
+msgid "Ignore"
+msgstr "Ignore"
+
+#: includes/Sync/Records/Record.php:552
+msgid "Delete"
+msgstr "Delete"
+
+#. translators: Placeholder: %s - product name
+#: includes/Sync/Records/Record.php:380
+msgid "%s not found in Square."
+msgstr "%s not found in Square."
+
+#: includes/Sync/Records/Record.php:207
+msgid "Alert"
+msgstr "Alert"
+
+#: includes/Sync/Records/Record.php:206
+msgid "Notice"
+msgstr "Notice"
+
+#: includes/Sync/Records/Record.php:205
+msgid "Info"
+msgstr "Info"
+
+#: includes/Admin.php:198
+msgid "Imported"
+msgstr "Imported"
+
+#: includes/Admin.php:196
+msgid "Skipped"
+msgstr "Skipped"
+
+#: includes/Admin.php:195
+msgid "No records found"
+msgstr "No records found"
+
+#: includes/Admin.php:194 includes/Sync/Records/Record.php:208
+msgid "Resolved"
+msgstr "Resolved"
+
+#: includes/Admin.php:148
+msgid "Fetch stock from Square"
+msgstr "Fetch stock from Square"
+
+#: includes/Admin.php:147
+msgid "Managed by Square"
+msgstr "Managed by Square"
+
+#. translators: Placeholders: %s - additional action
+#: includes/Emails/Sync_Completed.php:131
+msgid "The sync job has failed. Check sync records, or %s."
+msgstr "The sync job has failed. Check sync records, or %s."
+
+#: includes/Emails/Sync_Completed.php:126 includes/Settings.php:365
+msgid "Enable Logging"
+msgstr "Enable Logging"
+
+#: includes/Emails/Sync_Completed.php:124
+msgid "Inspect status logs"
+msgstr "Inspect status logs"
+
+#. translators: Placeholders: %1$s - opening <a> HTML link tag, %2$s - closing
+#. </a> HTML link tag, %3$s - additional action
+#: includes/Emails/Sync_Completed.php:115
+msgid "The sync job has failed. %1$sClick for more details%2$s, or %3$s."
+msgstr "The sync job has failed. %1$sClick for more details%2$s, or %3$s."
+
+#. translators: Placeholders: %1$s - opening <a> HTML link tag, %2$s - closing
+#. </a> HTML link tag
+#: includes/Emails/Sync_Completed.php:107
+msgid "%1$sEnable logging%2$s"
+msgstr "%1$sEnable logging%2$s"
+
+#. translators: Placeholders: %1$s - opening <a> HTML link tag, %2$s - closing
+#. </a> HTML link tag
+#: includes/Emails/Access_Token_Email.php:112
+#: includes/Emails/Sync_Completed.php:100
+msgid "%1$sInspect status logs%2$s"
+msgstr "%1$sInspect status logs%2$s"
+
+#: includes/Emails/Sync_Completed.php:65
+msgid "Square sync failed"
+msgstr "Square sync failed"
+
+#. translators: %s default email address
+#: includes/Emails/Base_Email.php:118
+msgid "Enter recipients (comma separated) for this email. Defaults to admin email: %s"
+msgstr "Enter recipients (comma separated) for this email. Defaults to admin email: %s"
+
+#: includes/Emails/Base_Email.php:115
+msgid "Recipient(s)"
+msgstr "Recipient(s)"
+
+#. translators: Placeholder: %s - default email subject text
+#: includes/Emails/Base_Email.php:103
+msgid "This controls the email subject line. Leave blank to use the default subject: %s"
+msgstr "This controls the email subject line. Leave blank to use the default subject: %s"
+
+#: includes/Emails/Sync_Completed.php:44
+msgctxt "Email body with merge tag placeholders"
+msgid "Square sync completed for {site_title} at {sync_completed_date} {sync_completed_time}."
+msgstr "Square sync completed for {site_title} at {sync_completed_date} {sync_completed_time}."
+
+#: includes/Emails/Sync_Completed.php:43
+msgctxt "Email heading with merge tag placeholder"
+msgid "Square sync completed for {product_count}"
+msgstr "Square sync completed for {product_count}"
+
+#: includes/Emails/Sync_Completed.php:42
+msgctxt "Email subject"
+msgid "[WooCommerce] Square sync completed"
+msgstr "[WooCommerce] Square sync completed"
+
+#: includes/Emails/Sync_Completed.php:41
+msgid "This email is sent once a manual sync has been completed between WooCommerce and Square"
+msgstr "This email is sent once a manual sync has been completed between WooCommerce and Square"
+
+#: includes/Emails/Sync_Completed.php:40
+msgid "Square sync completed"
+msgstr "Square sync completed"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay.php:548
+#: includes/Gateway/API/Requests/Orders.php:319
+#: includes/Gateway/Digital_Wallet.php:579
+msgid "Discount"
+msgstr "Discount"
+
+#: includes/Framework/PaymentGateway/Integrations/Payment_Gateway_Integration_Subscriptions.php:388
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:2755
+#: includes/Gateway.php:315 includes/Gateway.php:1254
+#: includes/Gateway/API/Response_Message_Helper.php:92
+#: includes/Gateway/API/Response_Message_Helper.php:94
+#: includes/Gateway/API/Response_Message_Helper.php:96
+#: includes/Gateway/API/Response_Message_Helper.php:108
+#: includes/Gateway/API/Response_Message_Helper.php:114
+#: includes/Gateway/Blocks_Handler.php:126
+#: includes/Gateway/Digital_Wallet.php:132 includes/Gateway/Gift_Card.php:169
+#: includes/Gateway/Payment_Form.php:220
+msgid "An error occurred, please try again or try an alternate form of payment."
+msgstr "An error occurred, please try again or try an alternate form of payment."
+
+#: includes/Gateway/Payment_Form.php:162
+msgid "Postal code"
+msgstr "Postal code"
+
+#: includes/Admin/Sync_Page.php:388
+msgid "Start sync"
+msgstr "Start sync"
+
+#. translators: Placeholders: %1$s - the name of the system of record set in
+#. the sync settings (e.g. Square or WooCommerce), %3%s - unordered HTML list
+#. of additional information item(s)
+#: includes/Admin/Sync_Page.php:379
+msgid "You are about to sync products with Square. %1$s is your system of record set in the sync settings. For all products synced with Square: %2$s"
+msgstr "You are about to sync products with Square. %1$s is your system of record set in the sync settings. For all products synced with Square: %2$s"
+
+#: includes/Admin/Sync_Page.php:372
+msgid "If a match is not found, a new product will be created in Square."
+msgstr "If a match is not found, a new product will be created in Square."
+
+#: includes/Admin/Sync_Page.php:369
+msgid "If a match is not found in Square, the product will be skipped in the sync."
+msgstr "If a match is not found in Square, the product will be skipped in the sync."
+
+#: includes/Admin/Sync_Page.php:367
+msgid "If a match is not found in Square, the product will be hidden from the catalog in WooCommerce."
+msgstr "If a match is not found in Square, the product will be hidden from the catalog in WooCommerce."
+
+#: includes/Admin/Sync_Page.php:363
+msgid "If a match is found in WooCommerce, product data in Square will be overwritten with WooCommerce data."
+msgstr "If a match is found in WooCommerce, product data in Square will be overwritten with WooCommerce data."
+
+#: includes/Admin/Sync_Page.php:361
+msgid "If a match is found in Square, product data in WooCommerce will be overwritten with Square data."
+msgstr "If a match is found in Square, product data in WooCommerce will be overwritten with Square data."
+
+#: includes/Admin/Sync_Page.php:351
+msgid "Sync products with Square"
+msgstr "Sync products with Square"
+
+#: includes/Admin/Sync_Page.php:319
+msgid "No records found."
+msgstr "No records found."
+
+#: includes/Admin/Sync_Page.php:288 includes/Admin/Sync_Page.php:329
+#: includes/Handlers/Order.php:540 includes/Handlers/Products.php:958
+#: includes/Handlers/Products.php:1156
+msgid "Message"
+msgstr "Message"
+
+#: includes/Admin/Sync_Page.php:287 includes/Admin/Sync_Page.php:328
+msgid "Status"
+msgstr "Status"
+
+#: includes/Admin/Sync_Page.php:286 includes/Admin/Sync_Page.php:327
+msgctxt "Date - Time"
+msgid "Time"
+msgstr "Time"
+
+#: includes/Admin/Sync_Page.php:281
+msgctxt "Delete all records"
+msgid "Clear history"
+msgstr "Clear history"
+
+#: includes/Admin/Sync_Page.php:253
+msgid "Sync now"
+msgstr "Sync now"
+
+#: includes/Admin/Sync_Page.php:223
+msgid "Not synced yet."
+msgstr "Not synced yet."
+
+#: includes/Admin/Sync_Page.php:211
+msgid "Syncing now&hellip;"
+msgstr "Syncing now&hellip;"
+
+#: includes/Admin/Sync_Page.php:209
+msgid "Importing now&hellip;"
+msgstr "Importing now&hellip;"
+
+#. translators: Placeholder: %d number of products synced with Square
+#. translators: Placeholder: %d products count
+#: includes/Admin/Sync_Page.php:191 includes/Emails/Sync_Completed.php:212
+msgid "%d product"
+msgid_plural "%d products"
+msgstr[0] "%d product"
+msgstr[1] "%d products"
+
+#: includes/Admin/Sync_Page.php:181 includes/Admin/Sync_Page.php:289
+#: includes/Admin/Sync_Page.php:330
+msgid "Actions"
+msgstr "Actions"
+
+#: includes/Admin/Sync_Page.php:180
+msgid "Next sync"
+msgstr "Next sync"
+
+#: includes/Admin/Sync_Page.php:179
+msgid "Latest sync"
+msgstr "Latest sync"
+
+#: includes/Admin/Sync_Page.php:178
+msgid "Synced products"
+msgstr "Synced products"
+
+#. translators: Placeholder: %s - reason text
+#: includes/Admin/Sync_Page.php:171
+msgid "Product sync between WooCommerce and Square is currently unavailable. %s"
+msgstr "Product sync between WooCommerce and Square is currently unavailable. %s"
+
+#: includes/Admin/Sync_Page.php:166
+msgid "A sync is currently in progress. Please try again later."
+msgstr "A sync is currently in progress. Please try again later."
+
+#: includes/Admin/Sync_Page.php:164
+msgid "There are currently no products marked to be synced with Square."
+msgstr "There are currently no products marked to be synced with Square."
+
+#: includes/Admin/Sync_Page.php:160
+msgid "Please connect to Square to enable product sync."
+msgstr "Please connect to Square to enable product sync."
+
+#. translators: Placeholders: %1$s, %3$s - opening <strong> HTML tag, %2$s,
+#. %4$s - closing </strong> HTML tag
+#: includes/Admin/Sync_Page.php:108
+msgid "%1$sWooCommerce%2$s is the system of record set in the sync settings. The following data from WooCommerce will overwrite Square data for synced products: %3$sname, price, inventory, category, image%4$s."
+msgstr "%1$sWooCommerce%2$s is the system of record set in the sync settings. The following data from WooCommerce will overwrite Square data for synced products: %3$sname, price, inventory, category, image%4$s."
+
+#. translators: Placeholders: %1$s - opening <strong> HTML tag, %2$s closing
+#. </strong> HTML tag
+#: includes/Admin/Sync_Page.php:93
+msgid "%1$sProduct images%2$s will be imported from Square if no featured image is set in WooCommerce."
+msgstr "%1$sProduct images%2$s will be imported from Square if no featured image is set in WooCommerce."
+
+#. translators: Placeholders: %1$s, %3$s - opening <strong> HTML tag, %2$s,
+#. $4%s - closing </strong> HTML tag
+#: includes/Admin/Sync_Page.php:79
+msgid "%1$sSquare%2$s is the system of record set in the sync settings. The following data from Square will overwrite WooCommerce data for synced products: %3$sname, price, description, category, inventory%4$s."
+msgstr "%1$sSquare%2$s is the system of record set in the sync settings. The following data from Square will overwrite WooCommerce data for synced products: %3$sname, price, description, category, inventory%4$s."
+
+#: includes/Admin/Sync_Page.php:53
+msgid "Sync records"
+msgstr "Sync records"
+
+#. translators: Placeholder: %1$s - date (localized), %2$s - time (localized),
+#. %3$s - opening <a> HTML link tag, %4$s closing </a> HTML link tag
+#: includes/Handlers/Products.php:683
+msgid "The product catalog visibility has been set to \"hidden\", as a matching product could not be found in Square on %1$s at %2$s. %3$sCheck sync records%4$s."
+msgstr "The product catalog visibility has been set to \"hidden\", as a matching product could not be found in Square on %1$s at %2$s. %3$sCheck sync records%4$s."
+
+#: includes/Handlers/Products.php:312
+msgid "No change"
+msgstr "No change"
+
+#: includes/Handlers/Products.php:308
+msgid "Sync with Square?"
+msgstr "Sync with Square?"
+
+#: includes/Handlers/Products.php:272 includes/Handlers/Products.php:753
+#: includes/Handlers/Products.php:787 includes/Handlers/Products.php:798
+msgid "Sync with Square"
+msgstr "Sync with Square"
+
+#: includes/Handlers/Products.php:267
+msgid "Send product data to Square"
+msgstr "Send product data to Square"
+
+#: includes/Handlers/Products.php:267
+msgid "Update product data with Square data"
+msgstr "Update product data with Square data"
+
+#: includes/Admin.php:146 includes/Handlers/Products.php:187
+msgid "Synced with Square"
+msgstr "Synced with Square"
+
+#: includes/Admin/Settings_Page.php:188 includes/Settings.php:340
+msgid "Import Products"
+msgstr "Import Products"
+
+#: includes/Admin/Settings_Page.php:187 includes/Admin/Sync_Page.php:387
+#: includes/Framework/PaymentGateway/Admin/views/html-order-partial-capture.php:62
+msgid "Cancel"
+msgstr "Cancel"
+
+#: includes/Admin/Settings_Page.php:174 includes/Admin/Sync_Page.php:353
+msgid "Close modal window"
+msgstr "Close modal window"
+
+#: includes/Admin/Settings_Page.php:172
+msgid "Import Products From Square"
+msgstr "Import Products From Square"
+
+#: includes/Admin/Settings_Page.php:145 includes/Admin/Sync_Page.php:49
+msgid "Update"
+msgstr "Update"
+
+#: includes/Admin/Settings_Page.php:144
+msgid "Settings"
+msgstr "Settings"
+
+#: includes/Handlers/Product.php:436
+msgid "Product not synced with Square"
+msgstr "Product not synced with Square"
+
+#: includes/Handlers/Connection.php:186
+msgid "Disconnected successfully"
+msgstr "Disconnected successfully"
+
+#: includes/Handlers/Connection.php:103 includes/Handlers/Connection.php:178
+msgid "Sorry, you do not have permission to manage the Square connection."
+msgstr "Sorry, you do not have permission to manage the Square connection."
+
+#. translators: Placeholder: %d number of products processed
+#: includes/Handlers/Sync.php:288
+msgid "Updated data for %d product."
+msgid_plural "Updated data for %d products."
+msgstr[0] "Updated data for %d product."
+msgstr[1] "Updated data for %d products."
+
+#: includes/Handlers/Background_Job.php:302
+msgid "Success! You can now sync your products."
+msgstr "Success! You can now sync your products."
+
+#: includes/Handlers/Background_Job.php:252
+msgid "This tool will clear any ongoing Square product syncs."
+msgstr "This tool will clear any ongoing Square product syncs."
+
+#: includes/Handlers/Background_Job.php:251
+msgid "Clear"
+msgstr "Clear"
+
+#: includes/Handlers/Background_Job.php:250
+msgid "Clear Square Sync"
+msgstr "Clear Square Sync"
+
+#: includes/Admin/Privacy.php:91
+msgid "Square User Data Erased."
+msgstr "Square User Data Erased."
+
+#. translators: Placeholder: %1$s - <a> tag, %2$s - </a> tag
+#: includes/Admin/Privacy.php:59
+msgid "By using this extension, you may be storing personal data or sharing data with an external service. %1$sLearn more about how this works, including what you may want to include in your privacy policy.%2$s"
+msgstr "By using this extension, you may be storing personal data or sharing data with an external service. %1$sLearn more about how this works, including what you may want to include in your privacy policy.%2$s"
+
+#: includes/Admin/Privacy.php:45
+msgid "WooCommerce Square Customer Data"
+msgstr "WooCommerce Square Customer Data"
+
+#. Author URI of the plugin
+msgid "https://www.woocommerce.com/"
+msgstr "https://www.woocommerce.com/"
+
+#. Author of the plugin
+#: includes/Framework/Plugin_Compatibility.php:79 includes/Settings.php:278
+#: includes/Settings.php:909
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#. Description of the plugin
+msgid "Adds ability to sync inventory between WooCommerce and Square POS. In addition, you can also make purchases through the Square payment gateway."
+msgstr "Adds ability to sync inventory between WooCommerce and Square POS. In addition, you can also make purchases through the Square payment gateway."
+
+#. Plugin URI of the plugin
+msgid "https://woocommerce.com/products/square/"
+msgstr "https://woocommerce.com/products/square/"
+
+#. Plugin Name of the plugin
+#: includes/Plugin.php:803
+msgid "WooCommerce Square"
+msgstr "WooCommerce Square"
+
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Order.php:169
+#: includes/Framework/PaymentGateway/Admin/Payment_Gateway_Admin_Order.php:296
+msgid "Capture Charge"
+msgstr "Capture Charge"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Payment_Form.php:305
+msgid "MM / YY"
+msgstr "MM / YY"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway_Payment_Form.php:284
+msgid "Card Number"
+msgstr "Card Number"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1163
+#: includes/Gateway.php:731
+msgid "Description"
+msgstr "Description"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1156
+#: includes/Gateway.php:724
+msgid "Title"
+msgstr "Title"
+
+#: includes/Framework/PaymentGateway/ApplePay/Payment_Gateway_Apple_Pay_Admin.php:103
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:1149
+#: includes/Gateway.php:717 includes/Gateway.php:890 includes/Gateway.php:968
+msgid "Enable / Disable"
+msgstr "Enable / Disable"
+
+#: includes/Framework/PaymentGateway/Payment_Gateway.php:671
+#: includes/Gateway/Gift_Card.php:376
+msgid "Place order"
+msgstr "Place order"
+
+#. translators: Placeholders: %1$s - variation ID, %2$s - product name
+#: includes/Sync/Product_Import.php:944
+msgid "Variation #%1$s of %2$s"
+msgstr "Variation #%1$s of %2$s"
+
+#: includes/Sync/Product_Import.php:752 includes/Sync/Product_Import.php:1029
+msgid "The SKU already exists on another product"
+msgstr "The SKU already exists on another product"
+
+#. translators: Placeholders: %s - comma separated list of valid product types
+#: includes/Sync/Product_Import.php:1329
+msgid "Invalid product type - the product type must be any of these: %s"
+msgstr "Invalid product type - the product type must be any of these: %s"
+
+#. translators: Placeholders: %s - missing parameter name
+#: includes/Sync/Product_Import.php:1323
+msgid "Missing parameter %s"
+msgstr "Missing parameter %s"
+
+#: includes/Handlers/Products.php:314
+msgid "No"
+msgstr "No"
+
+#: includes/Handlers/Products.php:315
+msgid "Yes"
+msgstr "Yes"
+
+#: includes/Handlers/Connection.php:393
+msgid "Connect with Square"
+msgstr "Connect with Square"
+
+#: includes/Handlers/Connection.php:413
+msgid "Disconnect from Square"
+msgstr "Disconnect from Square"
+
+#: includes/Admin.php:149 includes/Settings.php:284
+msgid "Sync inventory"
+msgstr "Sync inventory"
+
+#: includes/Settings.php:246
+msgid "Business location"
+msgstr "Business location"
+
+#: includes/Settings.php:200
+msgid "Connect with Square to start syncing your products and inventory and also accept credit and debit card payments at checkout."
+msgstr "Connect with Square to start syncing your products and inventory and also accept credit and debit card payments at checkout."
+
+#: includes/Admin/Privacy.php:43 includes/Admin/Settings_Page.php:54
+#: includes/Gateway.php:99 includes/Settings.php:277 includes/Settings.php:906
+msgid "Square"
+msgstr "Square"

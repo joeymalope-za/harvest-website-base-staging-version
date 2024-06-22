@@ -1,0 +1,250 @@
+# Copyright (C) 2022 Themeparrot
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Weight Based Pricing for WooCommerce 1.1.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/weight-based-pricing-for-woocommerce\n"
+"Last-Translator: Anantharaj <anantharaj@w3cert.in>\n"
+"Language-Team: Themeparrot <support@themeparrot.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-10-31T15:58:32+05:30\n"
+"PO-Revision-Date: \n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: weight-based-pricing-woocommerce\n"
+
+#. Plugin Name of the plugin
+msgid "Weight Based Pricing for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://www.themeparrot.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Weight Based Product Pricing for WooCommerce helps you to set product price based on the weight."
+msgstr ""
+
+#. Author of the plugin
+msgid "Themeparrot"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://themeparrot.com/"
+msgstr ""
+
+#: App/Controllers/Admin/PluginMenu.php:33
+#: App/Controllers/Admin/PluginMenu.php:34
+#: App/Controllers/Admin/SimpleProducts.php:50
+msgid "Weight Based Pricing"
+msgstr ""
+
+#: App/Controllers/Admin/PluginMenu.php:62
+#: App/Controllers/Admin/PluginMenu.php:75
+msgid "Action failed! Please refresh the page and retry."
+msgstr ""
+
+#: App/Controllers/Admin/PluginMenu.php:99
+msgid "Your settings have been saved."
+msgstr ""
+
+#: App/Controllers/Admin/PluginMenu.php:101
+msgid "Settings reset successfully."
+msgstr ""
+
+#: App/Controllers/Admin/SimpleProducts.php:51
+#: App/Controllers/Admin/VariableProducts.php:49
+#: App/Views/Admin/Settings.php:45
+msgid "Enable Weight Based Pricing"
+msgstr ""
+
+#: App/Controllers/Admin/SimpleProducts.php:64
+#: App/Controllers/Admin/VariableProducts.php:61
+#: App/Views/Admin/Settings.php:60
+msgid "Kilogram (kg)"
+msgstr ""
+
+#: App/Controllers/Admin/SimpleProducts.php:65
+#: App/Controllers/Admin/VariableProducts.php:62
+#: App/Views/Admin/Settings.php:61
+msgid "Gram (g)"
+msgstr ""
+
+#: App/Controllers/Admin/SimpleProducts.php:66
+#: App/Controllers/Admin/VariableProducts.php:63
+#: App/Views/Admin/Settings.php:62
+msgid "Pound (lb)"
+msgstr ""
+
+#: App/Controllers/Admin/SimpleProducts.php:67
+#: App/Controllers/Admin/VariableProducts.php:64
+#: App/Views/Admin/Settings.php:63
+msgid "Ounce (oz)"
+msgstr ""
+
+#: App/Controllers/Admin/SimpleProducts.php:70
+#: App/Controllers/Admin/VariableProducts.php:66
+msgid "Weight Unit"
+msgstr ""
+
+#: App/Controllers/Admin/SimpleProducts.php:83
+#: App/Controllers/Admin/VariableProducts.php:77
+msgid "Minimum Weight"
+msgstr ""
+
+#: App/Controllers/Admin/SimpleProducts.php:96
+#: App/Controllers/Admin/VariableProducts.php:88
+msgid "Maximum Weight"
+msgstr ""
+
+#: App/Controllers/Admin/SimpleProducts.php:109
+#: App/Controllers/Admin/VariableProducts.php:99
+msgid "Weight Intervals"
+msgstr ""
+
+#: App/Controllers/Admin/SimpleProducts.php:123
+#: App/Controllers/Admin/VariableProducts.php:111
+msgid "Wastage Percentage"
+msgstr ""
+
+#: App/Controllers/Frontend/CartAdjustments.php:45
+msgid "Please enter a weight quantity"
+msgstr ""
+
+#: App/Controllers/Frontend/CartAdjustments.php:51
+#: App/Controllers/Frontend/CartAdjustments.php:72
+msgid "Invalid weight quantity"
+msgstr ""
+
+#: App/Controllers/Frontend/CartAdjustments.php:60
+msgid "Weight quantity must be at least [minimum_quantity]"
+msgstr ""
+
+#: App/Controllers/Frontend/CartAdjustments.php:66
+msgid "Weight quantity must not be more than [maximum_quantity]"
+msgstr ""
+
+#: App/Controllers/Frontend/CartAdjustments.php:94
+msgid "You cannot add that [current_quantity] to the cart - We have [stock_quantity] in stock and you already have [cart_quantity] in your cart"
+msgstr ""
+
+#: App/Controllers/Frontend/CartAdjustments.php:150
+#: App/Views/Frontend/PricingSection.php:14
+#: App/Views/Frontend/PricingSection.php:118
+msgid "Weight"
+msgstr ""
+
+#: App/Controllers/Frontend/CartAdjustments.php:156
+#: App/Views/Frontend/PricingSection.php:19
+#: App/Views/Frontend/PricingSection.php:123
+msgid "[actual_weight_label]"
+msgstr ""
+
+#: App/Controllers/Frontend/CartAdjustments.php:274
+msgid "Your Savings"
+msgstr ""
+
+#: App/Controllers/Frontend/CartAdjustments.php:275
+msgid "Total Savings"
+msgstr ""
+
+#: App/Controllers/OrderAdjustments.php:44
+msgid "Ordered Weight"
+msgstr ""
+
+#: App/Controllers/OrderAdjustments.php:46
+#: App/Views/Admin/Settings.php:110
+#: App/Views/Admin/Settings.php:111
+msgid "Actual Weight"
+msgstr ""
+
+#. translators: %s is replaced with required php version
+#: App/Helpers/CheckCompatible.php:16
+msgid "This plugin can not be activated because it requires minimum PHP version of %s"
+msgstr ""
+
+#. translators: %s is replaced with required woocommerce version
+#: App/Helpers/CheckCompatible.php:23
+msgid "This plugin requires at least WooCommerce %s"
+msgstr ""
+
+#: App/Helpers/WooCommerce.php:30
+msgid "WooCommerce"
+msgstr ""
+
+#: App/Helpers/WooCommerce.php:34
+msgid "[plugin] requires the [woocommerce] plugin to be installed and active."
+msgstr ""
+
+#: App/Views/Admin/Settings.php:16
+msgid "Weight Based Pricing Settings"
+msgstr ""
+
+#: App/Views/Admin/Settings.php:23
+msgid "Save Changes"
+msgstr ""
+
+#: App/Views/Admin/Settings.php:27
+msgid "Reset"
+msgstr ""
+
+#: App/Views/Admin/Settings.php:51
+msgid "Enable the Weight Based Pricing globally"
+msgstr ""
+
+#: App/Views/Admin/Settings.php:55
+#: App/Views/Admin/Settings.php:67
+msgid "Default Weight Unit"
+msgstr ""
+
+#: App/Views/Admin/Settings.php:70
+msgid "Custom Weight Input"
+msgstr ""
+
+#: App/Views/Admin/Settings.php:76
+msgid "Allow customers to enter custom weight input"
+msgstr ""
+
+#: App/Views/Admin/Settings.php:80
+msgid "Add to Cart Button Label (Shop Page)"
+msgstr ""
+
+#: App/Views/Admin/Settings.php:84
+#: App/Views/Admin/Settings.php:85
+msgid "Go To Product"
+msgstr ""
+
+#: App/Views/Admin/Settings.php:88
+msgid "Sale Price Label (Product Page)"
+msgstr ""
+
+#: App/Views/Admin/Settings.php:92
+#: App/Views/Admin/Settings.php:93
+msgid "Sale Price"
+msgstr ""
+
+#: App/Views/Admin/Settings.php:96
+msgid "Enable Actual Weight"
+msgstr ""
+
+#: App/Views/Admin/Settings.php:102
+msgid "Show and Calculate the Actual Weight based on the Wastage percentage"
+msgstr ""
+
+#: App/Views/Admin/Settings.php:106
+msgid "Actual Weight Label"
+msgstr ""
+
+#: App/Views/Admin/Settings.php:114
+msgid "Show Total Savings"
+msgstr ""
+
+#: App/Views/Admin/Settings.php:120
+msgid "Show Your Savings row in Cart Totals"
+msgstr ""
+
+#: App/Views/Frontend/PricingSection.php:18
+#: App/Views/Frontend/PricingSection.php:122
+msgid "[sale_price_label]"
+msgstr ""

@@ -1,0 +1,11 @@
+name: Deploy WordPress site on production
+on:
+  workflow_dispatch:
+jobs:
+  call-deploy-workflow:
+    uses: ./.github/workflows/deploy.yml
+    with:
+      ENV: PROD
+      SSH_HOST: harvest.delivery
+      SITE_DOMAINS: harvest.delivery,id-api.harvest.delivery,id-web.harvest.delivery
+    secrets: inherit

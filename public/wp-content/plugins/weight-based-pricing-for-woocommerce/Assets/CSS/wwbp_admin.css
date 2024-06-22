@@ -1,0 +1,61 @@
+.wwbp_simple_pricing_rules {
+    padding: 10px;
+}
+
+.wwbp_variable_pricing_rules {
+    padding: 10px 0;
+}
+
+.wwbp_variable_pricing_rules #wwbp_pricing_rules_table,
+.wwbp_simple_pricing_rules #wwbp_pricing_rules_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wwbp_variable_pricing_rules #wwbp_pricing_rules_table th,
+.wwbp_simple_pricing_rules #wwbp_pricing_rules_table th {
+    background: #135e96;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    color: #FFF;
+}
+
+.wwbp_variable_pricing_rules #wwbp_pricing_rules_table tr td,
+.wwbp_simple_pricing_rules #wwbp_pricing_rules_table tr td {
+    padding: 10px;
+}
+
+.wwbp_variable_pricing_rules #wwbp_pricing_rules_table tr td input,
+.wwbp_simple_pricing_rules #wwbp_pricing_rules_table tr td input {
+    width: 90%;
+}
+
+.wwbp_variable_pricing_rules #wwbp_pricing_rules_table tr:nth-child(even), 
+.wwbp_simple_pricing_rules #wwbp_pricing_rules_table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.empty_row td {
+    padding: 10px !important; 
+}
+
+.wwbp_add_pricing_rule {
+    margin: 10px 0;
+    width: 100% !important; 
+    border: none !important;
+    padding: 0 !important;
+}
+
+.wwbp_add_pricing_rule td {
+    text-align: right !important;
+    padding: 0 !important;
+}
+
+#add_weight_ranges .dashicons {
+    vertical-align: middle !important;
+}
+
+.delete_weight_ranges .dashicons {
+    padding: 8px 0;
+}

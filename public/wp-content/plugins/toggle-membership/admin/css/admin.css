@@ -1,0 +1,60 @@
+/* Admin CSS */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Plugin Admin Page Styles */
+.woocommerce-checkout-toggle {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.woocommerce-checkout-toggle h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.woocommerce-checkout-toggle .form-table {
+    width: 100%;
+}
+
+.woocommerce-checkout-toggle .form-table th {
+    padding: 15px 10px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.woocommerce-checkout-toggle .form-table td {
+    padding: 15px 10px;
+}
+
+.woocommerce-checkout-toggle .form-table td input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.woocommerce-checkout-toggle .submit {
+    text-align: right;
+}
+
+.woocommerce-checkout-toggle .submit input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007cba;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.woocommerce-checkout-toggle .submit input[type="submit"]:hover {
+    background-color: #005a87;
+}

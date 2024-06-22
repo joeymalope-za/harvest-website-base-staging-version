@@ -1,0 +1,12 @@
+name: Deploy WordPress to new AWS dev environment
+on:
+  workflow_dispatch:
+jobs:
+  call-deploy-workflow:
+    uses: ./.github/workflows/deploy-rds.yml
+    with:
+      ENV: AWS_DEV
+      SSH_HOST: wp.harvest-dev-new.net
+      SITE_DOMAINS: harvest-dev-new.net,id-api.harvest-dev-new.net,id-web.harvest-dev-new.net
+      DB_HOST: harvest-wp-dev.cv0o02oiwmxz.ap-southeast-2.rds.amazonaws.com
+    secrets: inherit

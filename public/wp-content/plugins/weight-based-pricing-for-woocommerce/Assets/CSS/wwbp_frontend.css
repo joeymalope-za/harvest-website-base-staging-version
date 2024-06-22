@@ -1,0 +1,36 @@
+.wwbp_calculation_section {
+    margin: 1rem 0;
+}
+
+.wwbp_calculation_section .weight input::-webkit-outer-spin-button,
+.wwbp_calculation_section .weight input::-webkit-inner-spin-button {
+    display: none;
+    margin: 0;
+}
+
+.wwbp_calculation_section .weight button,
+.wwbp_calculation_section .weight input {
+    float: left;
+    height: inherit;
+}
+
+.wwbp_calculation_section .weight .qty {
+    width: 64px;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.wwbp_calculation_section .weight:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.wwbp_calculation_section table td .weight {
+    float: right;
+}
+.wwbp_calculation_section table td:nth-child(2)  {
+    text-align: right;
+}

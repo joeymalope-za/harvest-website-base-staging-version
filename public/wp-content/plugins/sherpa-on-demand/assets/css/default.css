@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;600;700&display=swap');
+
+:root {
+    --sherpa_blue: #0097a8;
+    --sherpa_dark_blue: #017d8b;
+    --sherpa_grey: #F7F9FB;
+    --sherpa_black: #25404d;
+    --black : var(--sherpa_black)!important;
+}
+
+a{
+  color: var(--sherpa_blue);
+}
+
+a:hover{
+  color: var(--sherpa_dark_blue);
+}
+
+.tooltip-inner {
+  background: #16242c;
+  font-family: 'Lato';
+}
+
+.black-text{
+    color: #000!important;
+}
+
+.block{
+    display: block;
+}
+
+.btn-outline-primary{
+    border: 2px solid var(--sherpa_blue);
+    color: var(--sherpa_blue);
+}
+
+.btn-outline-primary:hover{
+    background-color: var(--sherpa_blue);
+    border-color: var(--sherpa_blue);
+}
+
+.btn-primary{
+    background-color: var(--sherpa_blue);
+    border-color: var(--sherpa_blue);
+}
+
+.btn-primary:hover{
+    background-color: var(--sherpa_dark_blue)!important;
+    border-color: var(--sherpa_blue);
+}
+
+#business_days{
+  font-size: 13px;
+}
+
+#group_prices_table_1, #group_prices_table_2, #group_prices_table_3, #group_prices_table_4, #group_prices_table_5 {
+    border: 2px solid var(--sherpa_grey)!important;
+}
+
+#group_prices_table_1 td, #group_prices_table_2 td, #group_prices_table_3 td, #group_prices_table_4 td, #group_prices_table_5 td{
+    border-top: 2px solid var(--sherpa_grey);
+}
+
+.mb-5{
+  margin-bottom: 5px!important;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+.mb-30{
+  margin-bottom: 30px;
+}
+.mb-50{
+  margin-bottom: 50px;
+}
+
+#sherpa-support-panel p, .panel-default p, .panel-default label, .panel-default h4, .panel-default input, .panel-default table {
+  color: var(--sherpa_black);
+}
+
+select:hover{
+  color: var(--sherpa_blue)!important;
+}
+.underline{
+  text-decoration: underline;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.white-link, .white-link:visited{
+  color: #fff;
+}
+
+.white-link:hover, .white-link:active{
+  text-decoration: underline;
+  color: #fff;
+}
+
+.hideData {
+    display: none;
+}
+
+.sherpa-select-error {
+    /* border: 1px solid #b71c1c80 !important; */
+}
+
+#sherpaAccountForm select.form-control, #sherpaApiForm select.form-control, 
+#group_prices_table_1 select, #group_prices_table_2 select, #group_prices_table_3 select, #group_prices_table_4 select, #group_prices_table_5 select,
+#time-range select {
+    background: var(--sherpa_grey) url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E') no-repeat right 5px top 55%;
+    border: none;
+}
+
+#sherpaAccountForm .form-control, #sherpaApiForm .form-control, 
+#group_prices_table_1 input, #group_prices_table_2 input, #group_prices_table_3 input, #group_prices_table_4 input, #group_prices_table_5 input,
+#group_prices_table_1 th, #group_prices_table_2 th, #group_prices_table_3 th, #group_prices_table_4 th, #group_prices_table_5 th {
+    background: var(--sherpa_grey);
+    border: none;
+}
+
+#sherpaAccountForm .panel-heading{
+    display: flow-root;
+    border-radius: 6px 6px 0px 0px;
+}
+
+#sherpa-support-panel{
+  font-family: "lato";
+  max-width: 400px;
+}
+
+#sherpa-support-panel a{
+  color: var(--sherpa_blue);
+}
+
+#sherpa-support-panel p{
+  font-size: 15px;
+}
+
+#sherpa-support-panel h3{
+  color: var(--sherpa_blue);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#sherpa-support-panel #sign-up, #sherpa-support-panel #help-panel{
+    background: #fff;
+    padding: 30px;
+}
+.text-medium {
+    font-size: 14px !important;
+}
+
+.margin_show {
+    display: none;
+}
+
+.cart-collaterals .sherpaError {
+    display: none;
+}
+
+.woocommerce-checkout .woocommerce>.woocommerce-info:first-child {
+    display: none;
+}
+
+.tooltipHelp {
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: help;
+    font-size: 12px;
+    padding: 1px 3px 0;
+    color: #000;
+    margin-top: 8px;
+}
+
+.btn.btn-grey {
+    background-color: #ccc;
+}
+
+#sherpaApiForm .form-group .apiTestingWrap {
+    width: 10%;
+}
+
+.container.main-container {
+    margin: 35px 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.wp-core-ui .container.main-container select {
+    max-width: 100%;
+}
+
+#wpwrap .sherpa-delivery-ui{
+    background: var(--sherpa_grey);
+}
+
+.main-container .panel-heading {
+    /* background: #32373c none repeat scroll 0 0; */
+    background: #0097a8 none repeat scroll 0 0;
+    color: #fff;
+    border-radius: 0;
+    padding: 1rem 1.25rem;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+.main-container label {
+    font-weight: normal;
+}
+
+.main-container .panel-default {
+    background: #fff none repeat scroll 0 0;
+    border: none;
+    border-radius: 0;
+}
+
+.main-container h4 {
+    color: var(--sherpa_black);
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+}
+
+.removePadding.form-control {
+    margin: 7px 0 0;
+    width: 91.6667%;
+}
+
+.remove_field {
+    margin: 14px 0 0;
+}
+
+.add_field_button .glyphicon.glyphicon-plus {
+    background: #32373c none repeat scroll 0 0;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+    margin: 0 10px 0 0;
+}
+
+.btn.btn-link.add_field_button {
+    padding-left: 0;
+}
+
+.remove_field .glyphicon.glyphicon-minus {
+    background: #32373c none repeat scroll 0 0;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+}
+
+.main-container .modal-title {
+    margin: 0;
+}
+
+html {
+    background: transparent none repeat scroll 0 0;
+}
+
+.loaderImage,
+.deliveryLoaderImage,
+.apiLoaderImage {
+    background-image: url("../images/ajax-loader.gif");
+    height: 16px;
+    width: 16px;
+    display: none;
+    float: left;
+    /* margin: 9px 0 0 20px */
+}
+
+.errorMessage {
+    color: red;
+    margin: 4px 0 0;
+}
+
+.successMessage {
+    color: green;
+}
+
+#sherpa-messages .successMessage {
+    margin-top: 7px;
+}
+
+#sherpa-messages .apiErrorMessage {
+    color: red;
+    width: 120%;
+    margin-top: 7px;
+}
+
+#sliderErrorMessage {
+    color: #31708f;
+    float: left;
+    margin: 6px 0 0;
+}
+
+#time_slots_validate {
+    float: left;
+    margin: 10px 0 0;
+    width: 100%;
+}
+
+.form-group .inputText {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+body .col-sm-3 .tooltip .tooltip-inner {
+    background: #fff !important;
+    color: #333 !important;
+    box-shadow: 0 0 3px #333;
+    font-size: 14px;
+    text-align: left;
+    max-width: 400px !important;
+}
+
+body .col-sm-3 .tooltip .tooltip-arrow {
+    border-top-color: transparent !important;
+}
+
+#time-range>p {
+    color: #444;
+    font-size: 14px;
+}
+
+.input-text.input_class.disable_select {
+    display: none;
+}
+
+.extra-fields .description {
+    background-color: #efefef;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125) inset;
+    display: inline-block;
+    margin-top: 8px;
+    padding: 0.45em;
+    width: 100%;
+}
+
+#order_review .shop_table td #sherpa-datepicker input {
+    width: 100%;
+}
+
+.woocommerce tr.shipping td li:first-child {
+    list-style: none;
+}
+
+.woocommerce tr.shipping td ul li:first-child {
+    list-style: none;
+}
+
+.woocommerce tr.shipping td #shipping_method li:first-child {
+    list-style: none;
+}
+
+.woocommerce tr.shipping td #shipping_method ul li:first-child {
+    list-style: none;
+}
+
+.panel-default {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-color: #ddd;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.modal-dialog {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.modal-dialog .row {
+    padding: 10px;
+}
+
+.card-header {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.form-horizontal .control-label,
+.form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+    padding-top: 7px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.panel-default .btn-primary,
+.modal-dialog .btn-primary {
+    color: #fff;
+    background-color: var(--sherpa_blue);
+    border-color: var(--sherpa_blue);
+}
+
+.panel-default .btn-primary:hover{
+    color: #fff;
+    background-color: var(--sherpa_dark_blue);
+    border-color: var(--sherpa_blue);
+}
+
+.panel-default .btn-sm,
+.panel-default .btn-group-sm>.btn,
+.modal-dialog .btn-sm,
+.modal-dialog .btn-group-sm>.btn {
+    padding: 5px 10px;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.panel-default .btn-primary:hover,
+.modal-dialog .btn-primary:hover {
+    color: #fff;
+    background-color: #3276b1;
+    border-color: #285e8e;
+}
+
+.panel-default .btn,
+.modal-dialog .btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.modal-header {
+    min-height: 16.42857143px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-header .close {
+    margin-top: -2px;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+
+.modal-body {
+    position: relative;
+    padding: 20px;
+}
+
+.modal-footer {
+    padding: 19px 20px 20px;
+    margin-top: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+    justify-content: flex-start !important;
+}
+
+.sherpa_info {
+    font-size: 14px;
+}
+
+.Zebra_DatePicker .dp_footer {
+    margin-bottom: 0 !important;
+}
+
+.Zebra_DatePicker td,
+.Zebra_DatePicker th {
+    border-radius: 0 !important;
+    vertical-align: middle !important;
+}
+
+button.scalable {
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    background: var(--sherpa_blue);
+    color: white;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 3px;
+}
+
+button.scalable.delete {
+    background: var(--sherpa_black);
+}
+
+button:focus {
+    outline: none !important;
+}
+
+.hr {
+    margin: 2rem auto 1rem;
+    height: 0.5px;
+    background-color: rgb(0 0 0 / 7%);
+    width: 90%;
+    display: inline-block;
+}
+
+li.sherpa-shipping-method {
+    padding: 0.25em 0 0.25em 5px !important;
+    min-width: 200px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 20px !important;
+}
+
+li.sherpa-shipping-method ul {
+    /* margin-bottom: 10px; */
+    list-style: none;
+    margin-left: 0;
+    padding: 5px 10px;
+    font-size: inherit;
+}
+
+li.sherpa-shipping-method ul li:not(:first-child),
+li.sherpa-shipping-method ul li:not(:last-child) {
+    margin-bottom: 10px !important;
+}
+
+li.sherpa-shipping-method ul select {
+    width: 100%;
+    padding: 3px;
+    border-radius: 0;
+    font-size: inherit;
+}
+
+li.sherpa-shipping-method ul select:focus-visible {
+    outline: none;
+    border-radius: 0;
+}
+
+li.sherpa-shipping-method .title {
+    font-weight: bold;
+}
+
+span.Zebra_DatePicker_Icon_Wrapper {
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+/* Storefront theme fix */
+body.storefront-align-wide.right-sidebar .col-full {
+    max-width: 86.4989378333em;
+}
+
+p#no-sherpa-methods {
+    margin-left: 10px;
+    font-size: inherit;
+    font-style: italic;
+    font-weight: 100;
+}
+
+/* Datepicker fix */
+button.Zebra_DatePicker_Icon {
+    background: url(images/icon-cal.png) center center no-repeat !important;
+}
+
+/* Astra fix */
+body.theme-astra ul#shipping_method li.sherpa-shipping-method li {
+    text-indent: 0 !important;
+    padding: 0 !important;
+}
+
+body.theme-astra p#no-sherpa-methods {
+    margin-left: 30px !important;
+}
+
+/* Custom styles */
+li.sherpa-delivery-options {
+    margin: 0;
+    padding: 15px;
+    margin-bottom: 2em !important;
+    min-width: 250px;
+    border: 1px solid #f1f1f1;
+}
+
+li.sherpa-delivery-options ul {
+    list-style: none;
+    margin: 0;
+}
+
+li.sherpa-delivery-options ul li:nth-child(1) {
+    font-weight: bold;
+}
+
+li.sherpa-delivery-options ul li:not(:last-child) {
+    margin-bottom: 10px !important;
+}
+
+#sherpa-methods {
+    width: 100%;
+    padding: 5px;
+}
+
+.list-method-options select {
+    width: 100%;
+    padding: 5px;
+}
+
+span.Zebra_DatePicker_Icon_Wrapper {
+    width: 100%;
+    padding: 0 !important;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+/* Datepicker */
+.Zebra_DatePicker {
+    border-radius: 0 !important;
+}
+
+.form-control {
+    font-size: 0.875rem !important;
+    border: none;
+}
+
+.help-text {
+    color: #a7abae !important;
+    font-size: 12px !important;
+}
+
+@media (min-width: 768px) {
+    .form-horizontal .control-label {
+        /* text-align: right; */
+    }
+}

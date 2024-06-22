@@ -1,0 +1,12 @@
+name: Export WordPress from STAGING
+on:
+  workflow_dispatch:
+jobs:
+  call-export-workflow:
+    uses: ./.github/workflows/export.yml
+    with:
+      ENV: STAGING
+      SSH_HOST: wp.harvest-staging-new.net
+      SSH_PORT: 22
+      DB_HOST: harvest-wp-staging.cv0o02oiwmxz.ap-southeast-2.rds.amazonaws.com
+    secrets: inherit

@@ -1,0 +1,207 @@
+<html>
+<head>
+</head>
+<body>
+<div id="chat-container"></div>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
+<style>
+
+</style>
+<script>
+    var session_id = "121311213";
+    var resume = getSessionMessages().messages.length > 0;
+    var finalMessage;
+    var observerCreated = false;
+    var pauseObserver = false;
+    var gptMessagesQueue = [];
+    var gptStyleInterval = 65;
+    var gptStyleCharsAtOnce = 3;
+    var elPendingAfterGpt = null;
+    var gptRenderTimer = null;
+    var chatSessionExpiryMinutes = 20;
+
+    function getMessageListElement() {
+        return document.querySelector("#chat-container > df-messenger").shadowRoot.querySelector("#df-chat-wrapper").shadowRoot.querySelector("div > df-message-list").shadowRoot.querySelector("#messageList");
+    }
+
+    function customizeChatMessages() {
+        let messageListElement = getMessageListElement();
+        if (messageListElement !== undefined) {
+            for (let i = 0; i < messageListElement.children.length; i++) {
+                let el = messageListElement.children[i];
+                if (!el.classList.contains("gpt-style")) {
+                    el.style.display = "none";
+                    if (el.children.length > 0 && el.children[0].tagName.toLowerCase() === "df-card") {
+                        elPendingAfterGpt = el;
+                    }
+                    messageListElement.removeChild(el);
+                }
+            }
+        }
+        if (finalMessage)  {
+            let inputElement = document.querySelector("#chat-container > df-messenger").shadowRoot.querySelector("#df-chat-wrapper").shadowRoot.querySelector("df-messenger-user-input").shadowRoot.querySelector("input");
+            if (inputElement)   {
+                inputElement.disabled = true;
+                inputElement.placeholder = "The chat has ended";
+            }
+        }
+    }
+
+    function getSessionMessages() {
+        let messagesExpiryStr = localStorage.getItem(session_id);
+        let messagesExpiry = JSON.parse(messagesExpiryStr);
+        if (!messagesExpiry || new Date().getTime() > messagesExpiry.expiry) {
+            messagesExpiry = {messages: [] };
+        }
+        messagesExpiry.expiry = new Date().getTime() + chatSessionExpiryMinutes * 60 * 1000;
+        return messagesExpiry;
+    }
+
+    function storeMessage(newMessage) {
+        const msgObj = getSessionMessages();
+        msgObj.messages.push(newMessage);
+        localStorage.setItem(session_id, JSON.stringify(msgObj));
+    }
+
+    function addDfMessage(dynamic_text, renderAtOnce, isBot, store) {
+        let dfMessage = {
+            element: null, textLeft: dynamic_text, srcText: dynamic_text, textRendered: "", renderAtOnce: renderAtOnce,
+            isBot: isBot
+        };
+        if (store)
+            storeMessage(dfMessage);
+        if (!renderAtOnce) {
+            gptMessagesQueue.push(dfMessage);
+            // start gpt-style render worker
+            if (!gptRenderTimer)
+                gptRenderTimer = setInterval(renderGptStyleMessages, gptStyleInterval);
+        } else {
+            let el = createMessageElement(dfMessage);
+            // let DF DOM events wrap df-message element
+            setTimeout(() => {
+                let textElement = el.querySelector("df-message > div");
+                textElement.innerText = dfMessage.srcText;
+                textElement.scrollIntoView();
+            }, 50);
+        }
+    }
+
+    function createMessageElement(msgObj) {
+        let msgElement = document.createElement("span");
+        msgElement.className = "animation gpt-style";
+        msgElement.innerHTML = `
+    <df-message ${msgObj.isBot ? "isbot" : ""}></df-message>
+  `;
+        getMessageListElement().appendChild(msgElement);
+        return msgElement;
+    }
+
+    function renderGptStyleMessages() {
+        if (gptMessagesQueue.length > 0) {
+            let curMsgToRender = gptMessagesQueue[0];
+            if (curMsgToRender.element == null) {
+                curMsgToRender.element = createMessageElement(curMsgToRender);
+                // some DF elements may be inserted with a delay
+                customizeChatMessages();
+            } else {
+                let textElement = curMsgToRender.element.querySelector("df-message > div");
+                let strToAppend = curMsgToRender.textLeft.substring(0, gptStyleCharsAtOnce);
+                curMsgToRender.textLeft = curMsgToRender.textLeft.substring(gptStyleCharsAtOnce);
+                curMsgToRender.textRendered += strToAppend;
+                textElement.innerText = curMsgToRender.textRendered;
+                textElement.scrollIntoView();
+                if (curMsgToRender.textLeft === "")
+                    gptMessagesQueue.shift();
+            }
+        } else {
+            if (elPendingAfterGpt != null) {
+                elPendingAfterGpt.style.display = "";
+                elPendingAfterGpt.className += " gpt-style";
+                getMessageListElement().appendChild(elPendingAfterGpt);
+                elPendingAfterGpt.scrollIntoView();
+                elPendingAfterGpt = null;
+            }
+            clearInterval(gptRenderTimer);
+            gptRenderTimer = null;
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        createDFMessengerControl();
+        const dfMessenger = document.querySelector("df-messenger");
+        dfMessenger.addEventListener("df-button-clicked", function (event) {
+            // do not react if we don"t yet received final message
+            if (finalMessage === undefined)
+                return;
+
+        });
+        dfMessenger.addEventListener("df-user-input-entered", function (event) {
+            addDfMessage(event.detail.input, true, false, true);
+        });
+        dfMessenger.addEventListener("df-messenger-loaded", function (event) {
+            // it fires before DF html actually created :/
+            setTimeout(() => {
+                if (resume) {
+                    console.log("df messenger loaded");
+                    // hide minimize button - we don't allow that
+                    document.querySelector("#chat-container > df-messenger").shadowRoot.querySelector("#df-chat-wrapper").shadowRoot.querySelector("df-messenger-titlebar").shadowRoot.querySelector("#minimizeIconButton").style="display:none";
+                    getSessionMessages().messages.forEach((msg) => {
+                        addDfMessage(msg.srcText, true, msg.isBot, false);
+                    });
+                }
+            }, 500);
+        });
+        dfMessenger.addEventListener("df-response-received", function (event) {
+            console.log(event);
+            var elem = event.detail.response.queryResult.fulfillmentMessages.find(el => el.hasOwnProperty("payload"));
+            if (elem !== undefined) {
+                finalMessage = elem;
+            }
+            event.detail.response.queryResult.fulfillmentMessages.forEach(function (el) {
+                    if (!observerCreated) {
+                        console.log("create observer");
+                        var obsOpts = {childList: true};
+                        var ob = new MutationObserver(() => {
+                            if (!pauseObserver) {
+                                console.log("df dom changed");
+                                ob.disconnect();
+                                customizeChatMessages();
+                                ob.observe(getMessageListElement(), obsOpts);
+                            }
+                        });
+                        ob.observe(getMessageListElement(), {childList: true});
+                        observerCreated = true;
+                    }
+                    if (el.hasOwnProperty("text") && el.text.hasOwnProperty("text")) {
+                        console.log(`add message ${el.text.text[0]}`);
+                        addDfMessage(el.text.text[0], false, true, true);
+                    }
+                }
+            )
+        });
+    });
+
+    function createDFMessengerControl() {
+        if (session_id) {
+            // Create df-messenger element
+            const dfMessenger = document.createElement("df-messenger");
+
+            // Set element attributes
+            dfMessenger.setAttribute("df-cx", "true");
+            dfMessenger.setAttribute("location", "australia-southeast1");
+            dfMessenger.setAttribute("chat-title", "Virtual doctor");
+            dfMessenger.setAttribute("agent-id", "e37ca8ce-9e44-40dc-8d10-b3abcb449913");
+            dfMessenger.setAttribute("language-code", "en");
+            if (!resume)
+                dfMessenger.setAttribute("intent", "start-bot");
+            dfMessenger.setAttribute("expand", "true");
+            dfMessenger.setAttribute("session-id", session_id);
+            // Append the df-messenger element to the root div
+            const root = document.getElementById("chat-container");
+            root.appendChild(dfMessenger);
+        }
+    }
+
+</script>
+</body>
+</html>

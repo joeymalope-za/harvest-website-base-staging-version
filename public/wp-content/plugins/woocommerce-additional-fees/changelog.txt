@@ -1,0 +1,255 @@
+*** WooCommerce Payment Gateway Based Fees (prior Additional Fees) Changelog ***
+
+2020.07.08 - version 3.1.11
+	* Fixed: Admin payment methods N/A and Other are supported with "Disabled" - no fees added
+
+2019.10.30 - version 3.1.10
+	* Fixed: escape attributes on pay for order page 
+
+2019.09.18 - version 3.1.9
+	* Fixed: a bug when other WPML components are used function wpml_get_active_languages() does not exist
+
+2019.09.15 - version 3.1.8
+	* Added: WPML support to translate option "Output text" for cart fee
+
+2019.09.14 - version 3.1.7
+	* Fixed: WC 3.7 comp. with additional tax classes being moved from options to database table 
+	* Fixed a bug with subscription plugin and pay for order page - invalid order status
+	* Add new filters
+		- wc_add_fees_pay_for_order_valid_order_statuses
+		- wc_add_fees_pay_for_order_force_continue_classes
+		- wc_add_fees_pay_for_order_force_continue
+			fixes problems with 3rd party like subscriptions not returning a valid order status in filter woocommerce_valid_order_statuses_for_payment
+		- wc_add_fees_fee_output_text - allows to change fee output text in frontend e.g. translate for WPML
+		
+2019.08.15 - version 3.1.6
+	* WC 3.7 compatibility bug saving options page not working
+
+2018.06.03 - version 3.1.5
+	* Fix problem with sanitized tax class value in order item fee
+	* Move main plugin file to woocommerce-additional-fees.php to support new WC update feature
+
+2018.03.17 - version 3.1.4
+	* Fix support of fees for variation products
+
+2018.02.28 - version 3.1.3
+	* Add new options 
+		- Minimum cart value for adding fee
+		- Minimum fee
+	* Add new filters
+		- wc_add_fees_maximum_cart_order_value
+		- wc_add_fees_minimum_cart_order_value
+
+
+2018.01.28 - version 3.1.2
+	* Fix floating point problem with 0 - remove fees
+
+2018.01.26 - version 3.1.1
+	* Bugfix WooCommerce PayPal Express Checkout Gateway: Fees not added on checkout page
+
+2017.11.04 - version 3.1.0
+	* Fix German Market compatibility
+	* Add an option to change order of adding fixed value fee
+
+2017.10.26 - version 3.0.8
+	* Small fix for German Market plugin
+	* Small fix tax for fixed value to add and total value added
+
+2017.10.22 - version 3.0.7
+	* Adding WooCommerce 3.2 version check support
+	* Add filter wc_add_fees_fixed_fee_before_normal_fee
+	* Refactor fixed amount tax calculation with woocommerce_prices_include_tax option setting
+
+2017.10.13 - version 3.0.6
+	* Add filters to allow changing of predefined values (e.g. depending on different credit cards in one payment gateway)
+	* WC 3.2 bugfix integrate class WC_Cart_Fees added with 3.2
+
+2017.06.07 - version 3.0.5
+	* Subscription plugin: 
+		-	Add new actions to handle double fees of our plugin on pay for order page
+		-	Add filter "woocommerce_create_order" to avoid new order on pay for order when fees change
+
+2017.06.05 - version 3.0.4
+	* Change WC_Order to WC_Abstract_Order as type in function definintion
+	* Replace new WC_Order by wc_get_order()
+
+2017.05.30 - version 3.0.3
+	* Modified bugfix subscription plugin - remove our fees from existing order on renewal and manual payment
+	  see https://github.com/woocommerce/woocommerce-subscriptions/pull/450#issuecomment-304106454
+	* EU VAT plugin temporary fix: does not take care of is_vat_exempt of a saved order (see classes\class-wc-order-add-fees.php)
+	* WC 3.0 compatibility adjustments
+	 
+2017.05.12 - version 3.0.2
+	* Bugfix subscription plugin pay for order page - adds all fees from existing order (we do not recognise our fees any longer)
+
+2017.04.04 - version 3.0.1
+	* Integrate German Market (this plugin is currently not ready for WC 3.0.0)
+
+2017.04.03 - version 3.0.0
+	* Make plugin ready for WC 3.0.0 - great version junp of WC
+		-	for backwards comp move php classes to /v2614
+		-	remove code for versions <= 2.6.14 from php class code in /classes
+		-	add CRUD access introduced with WC 3.0.0
+		-	refactor and optimize code
+		-	supress fee lines with calculated value 0
+
+	* As we moved all code < WC 2.6.14 to own folder, all classes, properties and methods in folder classes have @since 3.0.0 by default
+
+
+2017.03.09 - version 2.2.25
+	* Add filter 'wc_add_fees_remove_fixed_fees_on_no_fees'
+
+2017.03.09 - version 2.2.24
+	* Fix deprecated actions/filters on settings page (notice message on tab - screen reader)
+	* Refactor code in function autoload
+
+2017.03.06 - version 2.2.23
+	* Bugfix: extend filter 'wc_add_fees_calculated_fee'
+
+2017.03.02 - version 2.2.22
+	* Bugfix: Change version number in /woocommerce_additional_fees_plugin.php to correct version number
+
+2017.02.24 - version 2.2.21
+	* Add filter 'wc_add_fees_calculated_fee'
+
+2017.02.24 - version 2.2.20
+	* Bugfix for plugin woocommerce-follow-up-emails: Fatal error on saveing an order: fixed with "if( ! class_exists( 'Follow_Up_Emails' ) )"
+
+2017.01.10 - version 2.2.19
+	* Bugfix "Delete Plugin" action missing
+	* Bugfix for plugin woocommerce-eu-vat-number: calculates tax when saving order from backend
+	* Bugfix for plugin woocommerce-eu-vat-number: "Pay for order" page
+
+2016.10.01 - version 2.2.18
+	* add a filter to change default post meta in get_post_meta_product_default and get_post_meta_order_default
+	* add a bugfix on checkout page - payment gateway is reset to preselected gateway
+
+2016.07.25 - version 2.2.17
+	* use $order->get_status() in function handler_ajax_calc_fee_pay_order and adjust backwards compatibility
+
+2016.02.19 - version 2.2.16
+	* wc_checkout_params.ajax_loader_url has been removed - provide a fallback to avoid breaking of CSS with null value
+
+2015.12.09 - version 2.2.15
+	* Set empty input fields for numbers to 0
+	* Bugfix - remove php warning for session variable on settings page
+
+2015.11.21 - version 2.2.14
+	* Bugfix with plugin woocommerce-subscriptions:
+		- Fees are calculated now correctly for signup
+		- Fees are calculated now correctly for recurring
+
+2015.10.08 - version 2.2.13
+	* Adding a check function_exists
+
+2015.10.08 - version 2.2.12
+	* Bugfix checkout page choosen payment gateway - Check with $_REQUEST and NOT with session, if present
+	  (woocommerce-taxamo uses hook woocommerce_checkout_update_order_review in class-wc-ajax.php)
+
+2015.10.07 - version 2.2.11
+	* Bugfix woocommerce-taxamo - Adding a lower priority (1000) to wp_print_styles handler
+
+2015.09.23 - version 2.2.10
+	* Adding compatibility with WooCommerce German Market plugin
+
+2015.07.27 - version 2.2.9
+	* Bugfix - wrong constant WC_Addons_Email_Att::HIDDEN_INPUT used 
+
+2015.07.24 - version 2.2.8
+	* WC 2.4 ready - changed hook to attach to WC, as settings page produces notices
+	* Bugfix: Settingspage returns to last edited subpage after save
+
+2015.04.23 - version 2.2.7
+	* adding 4 hooks to allow third party skip fee calculation on product and total level for cart and order individually
+
+2015.03.17 - version 2.2.6
+	* http://www.woothemes.com/products/gravity-forms-add-ons/ puts the same article several times in the cart -> 
+	  needs to make fee ID unique for each product line to avoid overwriting fees for the same product
+
+2015.03.11 - version 2.2.5
+	* Setting priority of some WC hooks to a higher value to ensure, that our plugin is the last
+
+2015.01.16 - version 2.2.4
+	* Bugfix in recalculation of saved orders 
+		- using WC core functions added with 2.2
+		- allow multiple taxes 
+		- allow discounts
+	* Bugfix order page: tax values for fees are not always displayed - extended tax calculation for saved orders
+
+2014.12.29 - version 2.2.3
+	* WC version 2.3: cupons after tax was eliminated - depricated arguments have been removed from code (backwards compatible for < 2.3 remains)
+
+2014.12.12 - version 2.2.2
+    * update fix from version 2.1.5: implement array of plugins to ignore standard WC function WC()->payment_gateways->get_available_payment_gateways()
+      and load all gateways in WC_Add_Fees->load_request_data()
+
+2014.09.06 - version 2.2.1
+	* Backward comp. with admin-ajax call wc-settings
+
+2014.09.05 - version 2.2.0
+	* Removing old documentation folder
+	* Refactoring code and classes and filenames to meet WP coding standards closer
+	* Making ready for WC 2.2
+		* implementing $fee->tax_data for cart
+		* implementing '_line_tax_data' for order
+		* disable recalculating fees, if refunds are given on additional fees
+
+2014.08.08 - version 2.1.5
+	* woocommerce-account-funds produces an endless loop due to a call to $cart->calculate_totals in our call to WC()->payment_gateways->get_available_payment_gateways()
+	  Fixed by reading available gateways directly by WC()->payment_gateways->payment_gateways
+
+2014.07.18 - version 2.1.4
+	* Integrate a fixed value to be added after calculated fee (needed to add a fixed commission in EU market dor credit card companies)
+
+2014.06.18 - version 2.1.3
+	* Fixed bug on cart page
+
+2014.06.17 - version 2.1.2
+	* Fixed bug with WP_PLUGIN_URL to the function plugins_url()
+	* Fixed bug with $obj_wc_cart
+	* Fixed bug with js not loading
+	* Fixed 'pay-for-order' page bug to work with pretty permalinks (getting value from global $wp and not from $_REQUEST)
+
+2014.06.11 - version 2.1.1
+	* Fixed incompatibility issue with gateway "mollie". 
+	  Default $gateway->method_title is not supported by the gateway but a method called $gateway->get_title()
+	* Fixed bug with WP_PLUGIN_URL to the function plugins_url()
+
+2014.06.08 - version 2.1.0
+	* Added compatibility for Subscription plugin
+	* Fee calculation now based on prices incl. tax & total incl. tax
+
+2014.05.16 - version 2.0.2
+	* fixed bug in linklist for payment gateways - changed from title to id
+	* CSS set size of link list
+
+2014.05.06 - version 2.0.1
+	* change 'woocommerce' to 'wc-settings' on settingstab
+	* Fixed "bug" for available payment gateways that need a cart for function $gateway->is_available (function load_request_data) encountered with 2.1.8
+	* remove uninstall.php, as > WP 2.7 uses uninstall hook if present
+
+2014.04.06 - version 2.0.0
+	* Major enhencements of the plugin:
+		* use of WC() and make ready for WC 2.1.6
+		* WooCommerce Core Bugfix on pay order page - WooCommerce always selects first gateway, not selected payment gateway in the order !!!!!!
+		* adding class WC_Order_addfee as extending WC_Order with functionality for calculating fees and totals in an order
+		* automatic fee calculation on pay-for-order frontend page when customer changes payment gateway
+		* automatic gateway fee calculation on admin order page when saving the order
+		* fee calculation when using coupons
+		* checkboxes allow supressing automatic fee calculation for a specific order
+		* checkbox to allow only selected payment gateway on pay for order page
+		* integrate version 1.0.3 for backward compatibility < 2.1.6 => modifying files of this version
+		* backward compatibility < 2.1.6 Bugfix on pay order page - WooCommerce always selects first gateway, not selected payment gateway in the order
+
+2014.02.14 - version 1.0.3
+	* Fixed single product fee issue
+
+2013.12.06 - version 1.0.2
+	* Fixed calculation error when using product fees AND order fees
+	* Fixed problem entering decimal numbers in chrome
+
+2013.11.28 - version 1.0.1
+	* Fixed session handling
+
+2013.11.27 - version 1.0.0
+	* First release

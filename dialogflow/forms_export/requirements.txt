@@ -1,0 +1,6 @@
+pandas
+pymongo
+argparse
+openai
+joblib
+tqdm

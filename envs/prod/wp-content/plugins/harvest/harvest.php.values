@@ -1,0 +1,9 @@
+WP_DEBUG=false
+WP_DEBUG_LOG=true
+ID_API_DOMAIN=https://id-api.harvest.delivery/
+ID_WEB_DOMAIN=https://id-web.harvest.delivery/
+QUEUE_WEB_DOMAIN=https://consult.harvest.delivery/
+HARVEST_API_DOMAIN=https://api.harvest.delivery/
+DOMAIN_URL=
+HARVEST_QUEUE_DOMAIN=https://harvest-queue:3006/
+HARVEST_CONSENT_DOMAIN=

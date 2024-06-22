@@ -1,0 +1,306 @@
+# Copyright (C) 2023 Gravity Wiz
+# This file is distributed under the GPL-3.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: GP Limit Submissions 1.1.7\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cloned-perk-ymzaK7z2q\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-01-26T02:49:22+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: gp-limit-submissions\n"
+
+#. Plugin Name of the plugin
+#: class-gp-limit-submissions.php:116
+msgid "GP Limit Submissions"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://gravitywiz.com/documentation/gravity-forms-limit-submissions/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Limit the number of entries that can be submitted by almost anything (e.g. user, role, IP, field value)."
+msgstr ""
+
+#. Author of the plugin
+msgid "Gravity Wiz"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://gravitywiz.com"
+msgstr ""
+
+#: class-gp-limit-submissions.php:117
+msgid "Limit Submissions"
+msgstr ""
+
+#: class-gp-limit-submissions.php:190
+msgid "Limit Feed Name"
+msgstr ""
+
+#: class-gp-limit-submissions.php:194
+msgid "Enter a name for this limit feed."
+msgstr ""
+
+#: class-gp-limit-submissions.php:198
+#: class-gp-limit-submissions.php:362
+msgid "Submission Limit"
+msgstr ""
+
+#: class-gp-limit-submissions.php:202
+msgid "Specify the number of entries that may be submitted if this limit feed applies."
+msgstr ""
+
+#: class-gp-limit-submissions.php:207
+#: class-gp-limit-submissions.php:223
+msgid "Time Period"
+msgstr ""
+
+#: class-gp-limit-submissions.php:213
+msgid "Time Period Type"
+msgstr ""
+
+#: class-gp-limit-submissions.php:216
+msgid "Choose time period settings"
+msgstr ""
+
+#: class-gp-limit-submissions.php:219
+msgid "Forever"
+msgstr ""
+
+#: class-gp-limit-submissions.php:227
+#: class-gp-limit-submissions.php:237
+msgid "Calendar Period"
+msgstr ""
+
+#: class-gp-limit-submissions.php:231
+msgid "Form Schedule"
+msgstr ""
+
+#: class-gp-limit-submissions.php:239
+msgid "Enter the value for the time period"
+msgstr ""
+
+#: class-gp-limit-submissions.php:244
+msgid "Time Period Value"
+msgstr ""
+
+#: class-gp-limit-submissions.php:246
+msgid "Enter the type of calendar time period"
+msgstr ""
+
+#: class-gp-limit-submissions.php:248
+msgid "Enter a number (i.e. 3)"
+msgstr ""
+
+#: class-gp-limit-submissions.php:251
+msgid "Time Period Unit"
+msgstr ""
+
+#: class-gp-limit-submissions.php:254
+msgid "Choose time period"
+msgstr ""
+
+#: class-gp-limit-submissions.php:258
+msgid "second(s)"
+msgstr ""
+
+#: class-gp-limit-submissions.php:262
+msgid "minute(s)"
+msgstr ""
+
+#: class-gp-limit-submissions.php:266
+msgid "hour(s)"
+msgstr ""
+
+#: class-gp-limit-submissions.php:270
+msgid "day(s)"
+msgstr ""
+
+#: class-gp-limit-submissions.php:274
+msgid "week(s)"
+msgstr ""
+
+#: class-gp-limit-submissions.php:278
+msgid "month(s)"
+msgstr ""
+
+#: class-gp-limit-submissions.php:282
+msgid "year(s)"
+msgstr ""
+
+#: class-gp-limit-submissions.php:290
+msgid "Limit Message"
+msgstr ""
+
+#: class-gp-limit-submissions.php:294
+msgid "Specify a message that will be displayed to users if their submission is limited or if the form's submission limit is reached."
+msgstr ""
+
+#: class-gp-limit-submissions.php:296
+#: includes/GPLS_Enforce.php:177
+msgid "The submission limit has been reached for this form."
+msgstr ""
+
+#: class-gp-limit-submissions.php:304
+msgid "Rule Groups"
+msgstr ""
+
+#: class-gp-limit-submissions.php:307
+msgid "Create groups of rules that determine whether this limit feed applies. Add a rule to your group with the (+)/(-) icons to the right. All rules in a group must be true for the group to match. Add another group by clicking the \"Add Rule Group\" button below. If any group matches, this limit feed will apply."
+msgstr ""
+
+#: class-gp-limit-submissions.php:312
+msgid "Additional Options"
+msgstr ""
+
+#: class-gp-limit-submissions.php:317
+msgid "Conditional Logic"
+msgstr ""
+
+#: class-gp-limit-submissions.php:318
+msgid "Enable"
+msgstr ""
+
+#: class-gp-limit-submissions.php:319
+msgid "Limit form submission if"
+msgstr ""
+
+#: class-gp-limit-submissions.php:320
+msgid "Use conditional logic to determine if this feed should limit the entry being submitted. Note: Conditional logic is only evaluated when the form is submitted. It is not evaluated when the form is displayed."
+msgstr ""
+
+#: class-gp-limit-submissions.php:332
+msgid "Specify a time period for which the this limit feed applies. Only entries submitted during this time period will count towards the submission limit."
+msgstr ""
+
+#: class-gp-limit-submissions.php:334
+msgid "All existing entries that match the rules for this limit feed will count towards the submission limit."
+msgstr ""
+
+#: class-gp-limit-submissions.php:335
+msgid "Only entries that fall within the specified time period (counting back from the current time) will count towards the submission limit."
+msgstr ""
+
+#: class-gp-limit-submissions.php:336
+msgid "Only entries that fall with the specified calendar period will count towards the submission limit."
+msgstr ""
+
+#: class-gp-limit-submissions.php:337
+msgid "Only entires that fall within the specified form schedule will count towards the submission limit. You can configure your form schedule on the Form Settings page via the \"Schedule form\" setting."
+msgstr ""
+
+#: class-gp-limit-submissions.php:361
+msgid "Limit Feed"
+msgstr ""
+
+#: includes/GPLS_Enforce.php:53
+msgid "Submission limit reached"
+msgstr ""
+
+#: includes/GPLS_Enforce.php:61
+msgid "Submission limit reached (%s)"
+msgstr ""
+
+#: includes/GPLS_Interface.php:17
+msgid "Rule Set"
+msgstr ""
+
+#: includes/GPLS_Interface.php:69
+msgid "IP"
+msgstr ""
+
+#: includes/GPLS_Interface.php:73
+#: includes/GPLS_Rule_User.php:48
+msgid "User"
+msgstr ""
+
+#: includes/GPLS_Interface.php:77
+#: includes/GPLS_Rule_Embed_Url.php:142
+#: includes/GPLS_Rule_Embed_Url.php:174
+msgid "Embed URL"
+msgstr ""
+
+#: includes/GPLS_Interface.php:81
+#: includes/GPLS_Rule_Role.php:80
+msgid "Role"
+msgstr ""
+
+#: includes/GPLS_Interface.php:85
+msgid "Field Value"
+msgstr ""
+
+#: includes/GPLS_RuleTest.php:290
+msgid "Per Day"
+msgstr ""
+
+#: includes/GPLS_RuleTest.php:297
+msgid "Per Week"
+msgstr ""
+
+#: includes/GPLS_RuleTest.php:307
+msgid "Per Month"
+msgstr ""
+
+#: includes/GPLS_RuleTest.php:317
+msgid "Per Quarter"
+msgstr ""
+
+#: includes/GPLS_RuleTest.php:327
+msgid "Per Year"
+msgstr ""
+
+#: includes/GPLS_Rule_Embed_Url.php:117
+#: includes/GPLS_Rule_Field.php:153
+msgid "User ID"
+msgstr ""
+
+#: includes/GPLS_Rule_Embed_Url.php:122
+msgid "Each URL"
+msgstr ""
+
+#: includes/GPLS_Rule_Embed_Url.php:126
+msgid "All URLs"
+msgstr ""
+
+#: includes/GPLS_Rule_Embed_Url.php:130
+msgid "Specific URL"
+msgstr ""
+
+#: includes/GPLS_Rule_Embed_Url.php:134
+msgid "Post/Page"
+msgstr ""
+
+#: includes/GPLS_Rule_Embed_Url.php:168
+msgid "There are no posts available to select."
+msgstr ""
+
+#: includes/GPLS_Rule_Ip.php:47
+#: includes/GPLS_Rule_Ip.php:64
+msgid "IP Rule"
+msgstr ""
+
+#: includes/GPLS_Rule_Ip.php:52
+msgid "Each IP"
+msgstr ""
+
+#: includes/GPLS_Rule_Ip.php:56
+msgid "Specific IP"
+msgstr ""
+
+#: includes/GPLS_Rule_User.php:59
+msgid "Each User"
+msgstr ""
+
+#: includes/GPLS_Rule_User.php:64
+msgid "Anonymous"
+msgstr ""
+
+#: includes/GPLS_Shortcode.php:27
+msgid "No Form ID specified in GPLS shortcode [gpls]"
+msgstr ""
