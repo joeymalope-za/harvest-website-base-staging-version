@@ -20,7 +20,7 @@ services:
     image: wordpress:${WP_VERSION:-latest}
     restart: always
     ports:
-      - 80:80 #  ${WP_PORT:-8080}:80
+      - ${WP_PORT:-8080}:80
     depends_on:
       - mariadb
     networks:

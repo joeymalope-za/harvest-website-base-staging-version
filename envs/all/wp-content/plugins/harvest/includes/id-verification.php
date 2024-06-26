@@ -12,6 +12,8 @@ if (function_exists('add_action')) {
         // in contrast with other steps, this one doesn't use callback to receive verification status, and instead gets it
         // from API on every page refresh - that should be very fast
         $user_id = get_current_user_id();
+        debug_log("wp_body_open");
+        debug_log($user_id);
         $user_uuid = get_user_meta($user_id, 'uuid', true);
         // check if user already verified
         $is_verified = get_user_meta($user_id, 'is_verified', true);

@@ -6,12 +6,12 @@
 define("ZOHO_CLIENT_ID", "${ZOHO_CLIENT_ID}");
 define("ZOHO_CLIENT_SECRET", "${ZOHO_CLIENT_SECRET}");
 define("ZOHO_REFRESH_TOKEN", "${ZOHO_REFRESH_TOKEN}");
-define("ZOHO_ACCOUNTS_DOMAIN", "https://accounts.zoho.com.au/");
-define("ZOHO_API_DOMAIN", "https://www.zohoapis.com.au/");
+define("ZOHO_ACCOUNTS_DOMAIN", "https://accounts.zoho.com/");
+define("ZOHO_API_DOMAIN", "https://www.zohoapis.com/");
 define("ZOHO_CRM_ACCOUNT_NAME", "Zoho");
 // yes, organization id is DIFFERENT across products
 define("ZOHO_INVENTORY_ORGANIZATION_ID", "7002692282");
-define("ZOHO_INVENTORY_SITE", "https://inventory.zoho.com.au/");
+define("ZOHO_INVENTORY_SITE", "https://inventory.zoho.com/");
 define("ZOHO_INVENTORY_NON_PRODUCTS", ["HRC-420-24-7"]);
 define("PLACEHOLDER_PRODUCT_ID", "51445000000802387");
 define("PLACEHOLDER_PRODUCT_NAME", "Item Placeholder");
