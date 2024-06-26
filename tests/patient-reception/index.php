@@ -31,7 +31,7 @@ activate_chat(uniqid());
             // DO NOT USE ON PRODUCTION
 
             // call WP API to fill in meta fields - on production, Dialogflow does that
-            fetch('http://harvest.local/wp-json/harvest-api/virtual-doctor-results', {
+            fetch('https://harvest-dev.xyz/wp-json/harvest-api/virtual-doctor-results', {
                 method: 'POST',
                 headers: {
                     'Connection': 'close',

@@ -46,8 +46,8 @@ if [ $LOCAL == 0 ]; then
 
   # add .htaccess to rewrite https to http
   echo "AddOutputFilterByType SUBSTITUTE text/html
-  Substitute s|http://harvest.local|http://harvest.local|ni
-  Header edit Location ^https:\/\/harvest.local http://harvest.local
+  Substitute s|https://harvest-dev.xyz|https://harvest-dev.xyz|ni
+  Header edit Location ^https:\/\/harvest.local https://harvest-dev.xyz
   " > public/.htaccess
 
   # clear cache

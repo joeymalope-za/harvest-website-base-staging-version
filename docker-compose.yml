@@ -34,3 +34,18 @@ services:
       WORDPRESS_DB_USER: harvestj
       WORDPRESS_DB_PASSWORD: harvestj
       WORDPRESS_DB_NAME: harvestj
+  caddy:
+    image: caddy:2.7.6-alpine
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - harvest-web_harvest_network

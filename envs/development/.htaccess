@@ -1,8 +1,8 @@
 <!-- @format -->
 
 AddOutputFilterByType SUBSTITUTE text/html
-Substitute s|http://harvest.local|http://harvest.local|ni
-Header edit Location ^https:\/\/harvest.local http://harvest.local
+Substitute s|https://harvest-dev.xyz|https://harvest-dev.xyz|ni
+Header edit Location ^https:\/\/harvest.local https://harvest-dev.xyz
 
 # BEGIN WordPress
 
